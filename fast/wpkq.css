@@ -1,0 +1,510 @@
+/*
+* @Author: Administrator
+* @Date:   2020-08-25 09:57:20
+ * @Last Modified by: feety
+ * @Last Modified time: 2020-08-31 16:56:08
+*/
+
+   
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #F5F5F5
+}
+.h-page{
+	background-color: #fff;
+}
+/* 头部展示栏 */
+.fast-top{
+	width: 100%;
+	height: 430px;
+	background-color: rgb(255,239,249);
+
+}
+.wpkq-logo{
+	width: 440px;
+	height: 80px;
+	margin: 30px 430px 10px;
+	display: inline-block;
+	padding: 0;
+	border-radius: 10%;
+}
+.wpkq-logo img{
+	width: 440px;
+	height: 80px;
+}
+.fast-show{
+	width: 1070px;
+	height: 220px;
+	/* background-color: yellowgreen; */
+	display: inline-block;
+	margin: 50px 135px;
+}
+.show-top{
+	width: 180px;
+	height: 220px;
+	margin: 0 15px;
+	background-color: white;
+	display: inline-block;
+	border-radius: 10%;
+	text-align: center;
+	cursor: pointer;
+}
+/* 展示图片样式 */
+.show-top img{
+	width: 130px;
+	height: 130px;
+	margin: 20px 25px;
+	/* -webkit-transition:  .5s; */
+}
+/* 展示品名字 */
+.show-top-text{
+	width: 180px;
+	height: 24px;
+	text-align: center;
+	background-color: #f0b1d4;
+	color: white;
+	margin: -10px auto;
+	font-size: 14px;
+	line-height: 24px;
+	display: none;
+}
+/* 鼠标悬停时变大 */
+.show-top:hover{
+	transform: scale(1.1);
+}
+.show-top img:hover{
+	transform: scale(1.1);
+}
+/* 鼠标悬停时出现文字 */
+.show-top:hover .show-top-text{
+	display: block;
+}
+/* “折后价”文字样式 */
+.discount{
+	display: inline-block;
+	width: 50px;
+	height: 18px;
+	background-color: #dd3d95;
+	border-radius: 9px;
+	color: white;
+	font-size: 12px;
+}
+.price{
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 24px;
+	font-weight: 600;
+	color:#4d4a4b;;
+}
+/* 热销分类样式 */
+.hot-top{
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+/* 文字两旁的横线 */
+.hot-top span{
+	display: inline-block;
+    background-color: #feaee2;
+    width: 140px;
+    height: 1px;
+    margin-bottom: 10px;
+}
+/* 文字样式 */
+.hot-top .hot-name{
+	display: inline-block;
+    width: 157px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #ffdfef;
+    margin: 15px auto;
+    font-size: 24px;
+    color: #dd3d95;
+    border-radius: 3.5px;
+    border: 1px solid #ffa8e1;
+}
+
+/* 热销分类展示商品 */
+.hot-classify{
+	width: 1002px;
+	height: 270px;
+	/* background-color: skyblue; */
+	margin: 20px auto;
+}
+.hot-show{
+	display: inline-block;
+	width: 163px;
+	height: 86px;
+	background-color: white;
+	margin-top: 3px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.hot-show p{
+	line-height: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+.hot-show img{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 15px;
+	margin-left: 14px;
+}
+/* 热销分类区背景变化 */
+.off_bg{
+	width: 163px;
+	height: 86px;
+	background-color: #f10180;
+	position: absolute;
+	top: 86px;
+	z-index: -0.5;	
+	transition: top 0.2s linear;
+	transition-delay: 0.1s;
+	/* overflow: hidden; */
+}
+.hot-show:hover .off_bg{
+	top: 0;
+	color: white;
+}
+.hot-show:hover p{
+	color: white;
+}
+/* 鼠标移入时商品展示的背景颜色和字体颜色改变 */
+/* .hot-show:hover{
+	background-color: #f10180;
+	color: white;
+} */
+
+/* 中间各类商品展示区域样式 */
+/* 今日必抢样式 */
+.jrbq-top{
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+/* 文字两旁的横线 */
+.jrbq-top span{
+	display: inline-block;
+    background-color: #feaee2;
+    width: 140px;
+    height: 1px;
+    margin-bottom: 10px;
+}
+/* 文字样式 */
+.jrbq-top .jrbq-name{
+	display: inline-block;
+    width: 157px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #ffdfef;
+    margin: 15px auto;
+    font-size: 24px;
+    color: #dd3d95;
+    border-radius: 3.5px;
+    border: 1px solid #ffa8e1;
+}
+.jrbq-show{
+	width: 1000px;
+    height: 1000px;
+   /*  background-color: skyblue; */
+    margin: 60px auto;
+}
+.jrbq-product{
+	display: inline-block;
+	width: 225px;
+    height: 425px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.jrbq-product:hover img{
+   opacity: 0.35;
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.hwjh-product:hover img{
+    opacity: 0.35;
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.hfcz-product:hover img{
+    opacity: 0.35;
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.mti_into{
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
+      position: absolute;
+      /* top: 30px; */
+      top: -75px;
+      left: 75px;
+      /* left: -70px; */
+      color: #333333;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background-color: #ffffff6e;
+      /* display: none; */
+      z-index: 1;
+}
+.jrbq-product:hover .mti_into{
+	top:90px;
+    transition: all .6s;
+}
+.hwjh-product:hover .mti_into{
+	top:90px;
+    transition: all .6s;
+}
+.hfcz-product:hover .mti_into{
+	top:90px;
+    transition: all .6s;
+}
+
+/* 海外尖货样式 */
+.hwjh-top{
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+/* 文字两旁的横线 */
+.hwjh-top span{
+	display: inline-block;
+    background-color: #feaee2;
+    width: 140px;
+    height: 1px;
+    margin-bottom: 10px;
+}
+/* 文字样式 */
+.hwjh-top .hwjh-name{
+	display: inline-block;
+    width: 157px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #ffdfef;
+    margin: 15px auto;
+    font-size: 24px;
+    color: #dd3d95;
+    border-radius: 3.5px;
+    border: 1px solid #ffa8e1;
+}
+.hwjh-show{
+	width: 1000px;
+    height: 1000px;
+    /* background-color: skyblue; */
+    margin: 60px auto;
+}
+.hwjh-product{
+	display: inline-block;
+	width: 225px;
+    height: 425px;
+    background-color: white;
+    border-radius: 10px;
+		margin: 10px 10px;
+		position: relative;
+		overflow: hidden;
+    cursor: pointer;
+}
+.jrbq, .hwjh{
+	height: 1000px;
+}
+
+
+.hfcz{
+	/* width: 1000px; */
+	height: 1000px;
+}
+/* 护肤彩妆样式 */
+.hfcz-top{
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+/* 文字两旁的横线 */
+.hfcz-top span{
+	display: inline-block;
+    background-color: #feaee2;
+    width: 140px;
+    height: 1px;
+    margin-bottom: 10px;
+}
+/* 文字样式 */
+.hfcz-top .hfcz-name{
+	display: inline-block;
+    width: 157px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #ffdfef;
+    margin: 15px auto;
+    font-size: 24px;
+    color: #dd3d95;
+    border-radius: 3.5px;
+    border: 1px solid #ffa8e1;
+}
+.hfcz-show{
+	width: 1000px;
+    height: 1000px;
+    /* background-color: skyblue; */
+    margin: 60px auto;
+}
+.hfcz-product{
+	display: inline-block;
+	width: 225px;
+    height: 425px;
+    background-color: white;
+    border-radius: 10px;
+		margin: 10px 10px;
+		position: relative;
+		overflow: hidden;
+    cursor: pointer;
+}
+
+
+/* 商品图片样式 */
+.product-img{
+	width: 200px;
+    height: 200px;
+    margin: 10px auto;
+  
+}
+ .jrbq img, .hwjh img, .hfcz img{
+	width: 200px;
+    height: 200px;
+}
+/* 商品简介 */
+.product-tip{
+	overflow: hidden;
+	text-overflow: ellipsis;/* 简介超出部分用省略号代替 */
+}
+.product-tip span{
+	white-space: nowrap;
+	color: #585c64;
+    font-size: 14px;
+    margin: 5px 5px;  
+}
+/* 商品名称样式 */
+.product-title{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: 600;
+    margin: 5px 5px;
+}
+/* 商品售出情况样式 */
+.product-prgress{
+	width: 132px;
+	height: 25px;
+	background: #fff;
+    color: #dd3d95;
+    padding: 0 13px;
+    border: 1px solid #dd3d95;
+    border-radius: 50px;
+   /*  margin: 30px 5px 5px 5px; */
+   position: relative;
+   left: 5px;
+   top: 25px;
+}
+/* 商品价格样式 */
+.product-price{
+	width: 210px;
+	height: 40px;
+	/* background-color: yellowgreen; */
+	
+	/* margin: 25px 5px 0 0; */
+	position: relative;
+	left: 5px;
+	top: 35px;
+}
+/* “折后价”样式 */
+.product-price .discount{
+	position: relative;
+	left: 2px;
+	top: -5px;
+	text-align: center;
+}
+.price-pass,.price-now{
+	font-size: 14px;
+    color: #ababab;
+    line-height: 3;
+}
+
+/* 锚点链接 */
+.nav-info{
+	width: 90px;
+	/* margin-left: 1200px; */
+	position: fixed;
+	top: 50px;
+	/* left: 12px; */
+	left: -90px;
+	display: none;
+	text-align: center;
+	padding: 20px 0;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 4px;
+	border: 1px solid #585c64;
+  transition: left .5s linear;
+	
+}
+
+/* 锚点显示 */
+#anhour_hidden_box{
+	width: 30px;
+	height: 67px;
+	position: absolute;
+	left: 90px;
+	top: 100px;
+	font-size: 16px;
+	text-align: center;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border:1px solid #ccc;
+	display: block;
+}
+
+.mdcolor{
+	width: 85px;
+	height: 31px;
+	border-bottom: 1px solid #ccc;
+	margin: 7px 2px 4px 2px;
+	border-radius: 5px;
+}
+
+  i.fa.fa-arrow-circle-o-right{
+    font-size: 25px;
+  }
+
+.nav-info li:hover{
+	color: #f10180;
+	
+}
+
+.nav-info ul{
+	font-size: 14px;
+    list-style: none;
+    line-height: 25px;
+}
+.nav-info ul a{
+	text-decoration: none;
+	color: #666;
+}
+.discuss-txt{
+	width: 1000px;
+	height: 300px;
+	background-color: skyblue;
+}

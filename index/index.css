@@ -1,0 +1,666 @@
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+    li{
+      list-style: none;
+
+    }
+
+
+ /* 轮播图 */
+    .carousel{
+      width:1349px;
+      height: 442px;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: 120%;
+      margin: -18px auto 0;
+      background-image: url("./img/carousel_bg.jpg");
+    }
+
+    .car_center{
+      width: 995px;
+      height:405px;
+      margin: 20px auto;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .car_c_1{
+      width: 962px;
+      height: 356px;
+      margin-top: 15px;
+      margin:0 auto; 
+      overflow: hidden;
+      position: relative;
+      transition: 2.5s linear;
+    }
+
+    .car_c_2{
+      width: 962px;
+      height: 40px;
+      margin:0 auto;
+    }
+
+    .car_c_2 ul{
+      margin: 0 120px;
+      /* margin: 0 auto; */ 
+    }
+    .car_c_2 ul li{
+      text-align: center;
+      line-height: 40px;
+      font-size: 13px;
+      float: left;
+      padding: 0 15px;
+    }
+     
+    .car_c_1 ul li a img{
+      width: 968px;
+      /* height: 352px; */
+      margin-top: 15px;
+      transform: all 0.5s;
+
+    }
+
+    .img1{
+      display: block;
+    }
+    .img2{
+      display: none;
+    }
+    .mg3{
+      display: none;
+    }
+
+    #car_center .car_c_1 ul:hover #left{
+      /* display: block; */
+      right: 20px;
+      transform: translateX(20px);
+    }
+    
+    /* 特卖区 */
+    .special_t_l{
+      width: 1000px;
+      height: 328px;
+      margin: 0 auto;
+    }
+    
+    .special_t_text{
+      width: 1000px;
+      height: 103px;
+    }
+   
+    .special_t_text img{
+      height: 103px;
+    }
+
+    .special_t_img{
+      width: 1000px;
+      height: 224px;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    
+    .special_img{
+      width: 327px;
+      height: 217px;
+      float: left;
+      padding: 0 3px;
+      overflow: hidden;
+    }
+    
+    .special_img img{
+      width: 326px;
+      margin: 3px auto;
+    }
+  
+    .special_img:hover img{
+      transition: all .6s;
+      animation: specialimg 1s linear;
+      animation-fill-mode:both;
+    }
+
+    @keyframes specialimg{
+      0%{
+      opacity: 1;
+      transform: scale(1);
+      }
+      50%{
+      opacity: 0.85;
+      transform: scale(1.1);
+      }
+      100%{
+      opacity: 1;
+      transform: scale(1);
+      }
+    }
+
+    /* 必看区 */
+    .must_t_look{
+      width: 1000px;
+      height: 655px;
+      margin: 0 auto;
+
+    }
+
+    .must_t_text{
+      width: 1000px;
+      height: 60px;
+    }
+    .must_t_text img{
+      height: 60px;
+    }
+
+    .must_t_imgbox1{
+      width: 1004px;
+      height: 294px;
+      overflow: hidden;
+
+    }
+   
+    .m_t_i_bimg1{
+      width: 510px;
+      height: 290px;
+      float: left;
+      background-image: url("./img/zhfq.png");
+      background-size: cover;
+    }
+    
+    .mti_b1{
+      width: 146px;
+      height: 230px;
+      float: left;
+      margin: 60px auto 0;
+      padding: 0 5px;
+
+    }
+    
+    .mti_b_1img{
+      width: 146px;
+      /* height: 200px; */
+      height: 186px;
+      position: relative;
+      cursor: pointer;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .mti_b_1img img{
+      width: 146px;
+    }
+
+    .mti_b_1img:hover img{
+      opacity: 0.8;
+      transform: scale(1.1);
+      transition: all .6s;
+    
+    }
+
+    .mti_into{
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
+      position: absolute;
+      /* top: 30px; */
+      top: -75px;
+      left: 35px;
+      /* left: -70px; */
+      /* color: #333333; */
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background-color: #ffffff6e;
+      /* display: none; */
+    }
+    .mti_b_1img:hover .mti_into{
+      /* left: 35px; */
+      top:30px;
+      transition: all .6s;
+      /* display: block; */
+    }
+
+    .mti_b_1img:hover{
+      transition: all 0.6s;
+    }
+
+
+    .m_t_i_bimg2{
+      width: 490px;
+      height: 289px;
+      float: left;
+      background-image: url("./img/phb.png");
+      border-bottom: 1px solid #ededed;
+      background-size: cover;
+
+    }
+
+    .mti_b_1price{
+      width: 146px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      font-size: 14px;
+    /* border: 1px solid rgb(93, 14, 167); */
+
+    }
+  
+    .mtbprice img{
+      width: 40px;
+      margin: -2px;
+
+      transform: rotateX(0);
+    }
+    
+    i.fa.fa-jpy{
+      margin: 11px auto;
+      font-size: 11px;
+    }
+
+    /* 品牌logo */
+    .mti_btext{
+      width: 85px;
+      height: 55px;
+      position: absolute;
+      bottom: 20px;
+      left: 35px;
+      font-size: 13px;
+      opacity: 0.8;
+      line-height: 95px;
+      text-align: center;
+      color: #6f5c76;
+      border-radius: 2px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    .mti_btext_2{
+      width: 100px;
+      height: 20px;
+      position: absolute;
+      bottom: 10px;
+      left: 23px;
+      cursor: pointer;
+    }
+    .mti_btext_2 img{
+      width: 100px;
+    }
+
+    .mti_btextimg1{
+      background-image: url("./img/fqbrand/1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .mti_btextimg2{
+      background-image: url("./img/fqbrand/2.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .mti_btextimg3{
+      background-image: url("./img/fqbrand/3.png");
+      background-repeat: no-repeat;
+    }
+    
+    /* 下框 */
+    .must_t_imgbox2{
+    width: 1000px;
+    height: 298px;
+    overflow: hidden;
+    /* border: 1px solid rgb(172, 19, 126); */
+    background-image: url("./img/wpkq.png");
+    background-size: cover;
+  }
+
+  .must_ib2{
+    width: 160px;
+    height: 210px;
+    float: left;
+    margin: 85px auto;
+    padding:0 2px;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s linear;
+    transform-style: preserve-3d;
+  }
+
+  .must_ib2 img{
+    position: absolute;
+    top: 0;
+    transition: all 1s;
+  }
+
+  .must_ib2 img:last-child{
+      transform-origin: 30px 30px;  
+      animation: rotate 4s linear infinite;  /*开始动画后无限循环，用来控制rotate*/
+      /* animation-duration:2.5s; */
+      transform-origin:center;
+      /* transform: rotateY(-180deg); */
+      /* display: none; */
+  }
+
+  @keyframes rotate{
+      from {
+        transform: scaleX(0); 
+        transform: scaleZ(0);
+      }
+      to {
+        
+      }
+
+     
+	}
+  
+  .wpkqimg2,
+  .wpkqimg4,
+  .wpkqimg6,
+  .wpkqimg8,
+  .wpkqimg10,
+  .wpkqimg12
+  {
+    z-index:9;
+    backface-visibility: hidden;
+
+  }
+  
+  .wpkqimg1,
+  .wpkqimg3,
+  .wpkqimg5,
+  .wpkqimg7,
+  .wpkqimg9,
+  .wpkqimg11
+  {
+    display: block;
+  }
+  
+  /* .mtbprice img{
+    transform: rotateX(180deg);
+    
+  } */
+
+/* 新特卖 */
+  .new_buy_title{
+    width: 1170px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url("./img/today_DDp.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+  }
+  .new_buy{
+    width: 1000px;
+    height: 4987px;
+    margin: 0 auto;
+
+}
+  
+
+  /* 倒计时 */
+  .new_clock{
+    width: 1000px;
+    height: 40px;
+  }
+  
+  .cont_clock{
+    width: 385px;
+    height: 40px;
+    border-bottom: 4px solid #1a1a1a;
+    background-image: url("./img/count_topfive.png");
+    background-repeat: no-repeat;
+  }
+
+  .c_clock{
+    width: 25px;
+    height: 25px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px 0 0;
+  }
+  #clock1{
+    left: 50px;
+    margin-left: 270px;
+  }
+  #clock2{
+    left: 468px;
+  }
+  #clock3{
+    left: 70px;
+  }
+
+  /* 精选 */
+  .new_brand{
+    width: 1000px;
+    height: 333px;
+
+  }
+
+  .new_brandchild{
+    width: 488px;
+    height: 333px;
+    float: left;
+    padding: 0 5px;
+    position: relative;
+  } 
+
+  /* 收藏 */
+  .new_like{
+    width: 75px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 110px;
+    right: 30px;
+    /* color: #666; */
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px; 
+    cursor: pointer;
+    background-color: #fff;
+    display: none;
+  }
+
+  .new_like i.fa.fa-heart-o{
+    color: #f10180;
+    display: inline-block;
+    /* display: none; */
+  }
+  i.fa.fa-heart{
+    color: #f10180;
+    display: none;
+    /* display: inline-block; */
+  }
+
+  .new_brandchild:hover .new_like{
+    display: block;
+  }
+
+
+  .new_br_img{
+    width: 488px;
+    height: 235px;
+    margin: 2px 0 0 0;
+    /* position: relative; */
+    cursor: pointer;
+  }
+
+  .new_br_text{
+    width: 488px;
+    height: 59px;
+    margin: 15px auto;
+    line-height: 30px;
+
+  }
+
+  .new_br_img img{
+    width: 490px;
+  }
+    
+  .new_br_img img:hover{
+    transition: all 0.6s;
+    animation: mewbr 1.5s linear;
+    animation-fill-mode:both;
+  }
+
+  @keyframes mewbr{
+      0%{
+      opacity: 1;
+      }
+      50%{
+      opacity: 0.7;
+      }
+      100%{
+      opacity: 1;
+      }
+    }
+
+  /* 女装 */
+   .cont_title_girl{
+    width: 371px;
+    height: 40px;
+    border-bottom: 3px solid #1a1a1a;
+    background-image: url("./img/woman_2ad.png");
+    background-repeat: no-repeat;
+  }
+
+  
+  /* 鞋包 */
+   .cont_title_bag{
+    width: 371px;
+    height: 40px;
+    border-bottom: 3px solid #1a1a1a;
+    background-image: url("./img/shoe.png");
+    background-repeat: no-repeat;
+  }
+
+  /* 运动 */
+   .cont_title_sport{
+    width: 371px;
+    height: 40px;
+    border-bottom: 3px solid #1a1a1a;
+    background-image: url("./img/sport.png");
+    background-repeat: no-repeat;
+  }
+
+  /* 男装 */
+   .cont_title_boy{
+    width: 371px;
+    height: 40px;
+    border-bottom: 3px solid #1a1a1a;
+    background-image: url("./img/men_hhqx.png");
+    background-repeat: no-repeat;
+  }
+
+  /* 美妆 */
+   .cont_title_mz{
+    width: 371px;
+    height: 40px;
+    border-bottom: 3px solid #1a1a1a;
+    background-image: url("./img/beauty_wrf.png");
+    background-repeat: no-repeat;
+  }
+
+  /* 饰品 */
+   .cont_title_sp{
+    width: 371px;
+    height: 40px;
+    border-bottom: 3px solid #1a1a1a;
+    background-image: url("./img/watch.png");
+    background-repeat: no-repeat;
+  }
+
+
+  @font-face {
+      font-family: "励字超粗黑简繁";
+      src: url("./励字超粗黑简繁/励字超粗黑简繁.ttf")
+    }
+
+  .nbt_1{
+    font-family: "励字超粗黑简繁";
+    font-size: 20px;
+  }
+  .nbt_2{
+    color: #f10582;
+    font-size: 22px;
+    font-family: "励字超粗黑简繁";
+  }
+  .nbt_3{
+    font-size: 16px;
+  }
+
+  .anhour{
+    width: 85px;
+    height: 270px;
+    position: relative;
+    background-color: #ffffff;
+    /*text-align: center;*/
+    position: fixed;
+    top: 50px;
+    /* left: 20px; */
+    left: -85px;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6;
+    display: none;
+    transition: left .5s linear;
+
+  }
+
+  /* 锚点显示 */
+  #anhour_hidden_box{
+    width: 30px;
+    height: 67px;
+    position: absolute;
+    left: 85px;
+    top: 100px;
+    font-size: 16px;
+    text-align: center;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border:1px solid #ccc;
+    display: block;
+  }
+
+  i.fa.fa-arrow-circle-o-right{
+    font-size: 25px;
+  }
+
+  #anhour_logo{
+    width: 100px;
+  }
+  .anhour_typeName{
+    width: 80px;
+    height: 35px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    -ms-text-kashida-space: 1%;
+    border-bottom: 1px solid #ccc;
+      
+    }
+    #anhour_last{
+      border-bottom: 0;
+    }
+    .anhour_typeName span{
+      font-size: 20px;
+    }
+
+    .anhour_returnTop{
+      color: #fff;
+      font-size: 14px;
+      margin-top: 4px;
+      text-align: center;
+    }
+    .btop{
+      cursor: pointer;
+    }
+    .mdcolor{
+      width: 75px;
+      height: 31px;
+      margin: 7px 2px 4px 2px;
+      border-radius: 5px;
+     
+    }
+  

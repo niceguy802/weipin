@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>注册登录</title>
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div>
+		<!-- 头部 -->
+		<div class="header">
+			<div class="h_inner">
+
+				<img id="logo" src="img/logo.png" alt="">
+				<div class="server">
+					<img src="img/server.png" alt="">
+				</div>
+
+			</div>
+		</div>
+		<div class="center">
+			<div class="login">
+				<div class="btn">
+					<div class="c_l_btn" id="loginBtnDiv">
+						账户登陆
+					</div>
+					<div class="c_l_btn" id="registBtnDiv">
+						账户注册
+					</div>
+				</div>
+				<!-- 登陆界面 -->
+				<div class="login_formBox">
+					<div class="login_form">
+						<div class="l_f_group">
+							<div class="icon">
+								<i class="fa fa-user-o" aria-hidden="true"></i>
+							</div>
+
+							<input class="l_f_input" type="text" placeholder="手机号" id="userName">
+							<p class="tips" id="phTip"></p>
+						</div>
+						<div class="l_f_group">
+							<div class="icon">
+								<i class="fa fa-lock" aria-hidden="true"></i>
+							</div>
+							<input class="l_f_input" type="password" placeholder="密码" id="password">
+							<p class="tips" id="pwTip"></p>
+						</div>
+						<div class="loginLink">
+							<a href="#" id="loginBtn">登陆</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- 注册界面 -->
+				<div class="regist_formBox">
+					<div class="regist_form">
+						<div class="r_f_group">
+							<div class="icon">
+								<i class="fa fa-user-o" aria-hidden="true"></i>
+							</div>
+
+							<input class="r_f_input" type="text" placeholder="手机号" id="r_phone">
+							<p class="tips" id="r_phTip"></p>
+						</div>
+						<div class="r_f_group">
+							<div class="icon">
+								<i class="fa fa-lock" aria-hidden="true"></i>
+							</div>
+							<input class="r_f_input" type="password" placeholder="密码" id="r_password">
+							<p class="tips" id="r_pwTip"></p>
+						</div>
+						<div class="r_f_group">
+							<div class="icon">
+								<i class="fa fa-lock" aria-hidden="true"></i>
+							</div>
+
+							<input class="r_f_input" type="password" placeholder="重复密码" id="r_rePassword">
+							<p class="tips" id="r_repwTip"></p>
+						</div>
+						<div class="r_f_group" id="codeLi">
+							<div class="icon">
+								<i class="fa fa-comment" aria-hidden="true"></i>
+							</div>
+							<input class="r_f_input" type="text" placeholder="验证码" id="r_code">
+							<p id="picyzm"></p>
+							<p class="tips" id="r_codeTip">验证码错误！</p>
+						</div>
+						<div class="registLink">
+							<a href="#" id="registBtn">注册</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+		<div class="footer">
+			<p class="copyright">Copyright 2020-2021 vip.com，All Rights Reserved ICP证：粤 A1-66666666</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="login.js"></script>
+	<script type="text/javascript" src="regist.js"></script>
+	<!-- <script type="text/javascript" src="gVerify.js"></script> -->
+</body>
+
+</html>

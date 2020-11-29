@@ -1,0 +1,2443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../nav/home.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../footer/footer.css">
+</head>
+
+<body>
+  <!-- body -->
+  <div class="h-page">
+    <!-- 头部 -->
+    <div class="header_nav">
+      <!-- top导航工具栏 -->
+      <nav class="top_nav">
+        <div class="top_nav_content">
+          <div class="city_select">
+            <div class="c_select">
+              <!-- 省份 -->
+              <select id="city">
+                <option value="广州">广州</option>
+                <option value="上海">上海</option>
+                <option value="北京">北京</option>
+                <option value="深圳">深圳</option>
+                <option value="温州">温州</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="top_nav_tool">
+            <ul>
+              <!-- 头部登录 -->
+              <li class="login_t">
+                <span>
+                  <a href="../loginRegist/login.html">
+                    请登录/注册
+                  </a>
+                </span>
+                <div class="l_b_mask"></div>
+                <!-- 隐藏登录注册 -->
+                <div class="hidden_login_t">
+                  <div class="hidden_login_t1">
+                    <div>
+                      <div class="h_lo_t1img"></div>
+                      <div class="h_lo_t1text" id="login_topNav">
+                        <span>你好！[请登录]</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden_login_t2">
+                    <div class="h_lo_t2text1">
+                      <ul>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href=""> 零钱</a></li>
+                      </ul>
+                    </div>
+                    <div class="h_lo_t2text2">
+                      <ul>
+                        <li><a href=""> 我的唯品币</a></li>
+                        <li><a href=""> 唯品金融</a></li>
+                        <li><a href="">我的优惠券</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="sigin">
+                <span>
+                  <a href="">
+                    <img src="../nav/img/present.png">
+                    签到有礼</a>
+                </span>
+                <div class="sigin_hidden">
+                  <span>签到</span>
+                </div>
+              </li>
+              <span>/</span>
+              <li class="my_dd"><span>
+                  <a href="">我的订单</a>
+                </span></li>
+              <li>/</li>
+              <li class="my_tm"><span>
+                  <a href="">我的特卖
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="my_tm_hidden">
+                  <ul>
+                    <li>商品收藏</li>
+                    <li>品牌收藏</li>
+                    <li>我的足迹</li>
+                  </ul>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="menber_club"><span>
+                  <a href="">会员俱乐部
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="menber_club_hidden">
+                  <ul>
+                    <li>俱乐部首页</li>
+                    <li>唯品币兑换</li>
+                  </ul>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="c_server"><span>
+                  <a href="">客户服务
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="c_server_hidden">
+                  <ul>
+                    <li>联系客服</li>
+                    <li>帮助中心</li>
+                    <li>服务中心</li>
+                    <li>知识产权</li>
+                  </ul>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="mobile_more"><span>
+                  <a href="">
+                    <i class="fa fa-mobile"></i>&nbsp;手机版</a>
+                </span>
+                <div class="mobile_qr">
+                  <img src="../nav/img/qr_code.jpg" alt="">
+                  <p>下载手机客户端&nbsp;随时抢</p>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="t_more"><span>
+                  <a href="">更多
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="t_more_hidden">
+                  <div class="t_more_hidden1">
+                    <div>
+                      <strong>合作专区</strong>
+                      <p>唯品卡</p>
+                    </div>
+                    <div class="t_more_hidden2">
+                      <strong>关于我们</strong>
+                      <p>
+                        <span>Sell on vip</span>
+                        <span>品牌招商</span>
+                        <span>官方博客</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </nav>
+      <!-- logo -->
+      <div class="head_logo">
+        <!-- 图1 -->
+        <div class="head_logo_inner">
+          <div class="brand_logo">
+            <a href="">
+              <img src="../nav/img/tph.png" alt="">
+            </a>
+          </div>
+          <!-- 图2 -->
+          <div class="brand_logo2">
+            <a href=""><img src="../nav/img/2.jpg" alt=""></a>
+          </div>
+          <!-- 搜索栏 -->
+          <div class="head_search">
+            <div class="s_input">
+              <input type="text" class="s_input1">
+            </div>
+            <a href="">
+              <div class="s_button">
+                <span><i class="fa fa-search"></i></span>
+              </div>
+            </a>
+            <p>
+            <ul class="s_tool">
+              <li><span>
+                  <a href="">护肤套装</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">COACH</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">连衣裙</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">女休闲鞋</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">耐克Nike</a>
+                </span></li>
+            </ul>
+            </p>
+          </div>
+          <div class="head_bag">
+            <div class="h_bag">
+              <span><i class="fa fa-shopping-cart"></i></span>
+              <span>购物车</span>
+              <span class="h_bag_n">
+                <span>&nbsp;0&nbsp;</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- 头部底部导航  -->
+      <div class="bottom_nav">
+        <div class="bottom_nav_inner">
+          <div class="nav_product" id="nav_pro">
+            <p><i class="fa fa-bars"></i>
+              商品分类</p>
+          </div>
+          <!-- 隐藏商品下拉 -->
+          <div class="bottom_nav_hidden" id="t_n_hidden">
+            <ul>
+              <li class="bn_hidden1">
+                <p>女装/男装/内衣</p>
+                <div class="bn_h bn_hidden1_h">
+                  <div class="bn_hidden1_content">
+                    <ul>
+                      <li>人气美衣
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>防晒衣</li>
+                      <li>短裤</li>
+                      <li>牛仔裤</li>
+                      <li>妈·妈装</li>
+                      <li>大码女装</li>
+                      <li>外套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>美裙衣橱
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>连衣裙</li>
+                      <li>半身裙</li>
+                      <li>套装裙</li>
+                      <li>修身美裙</li>
+                      <li>白色连衣裙</li>
+                      <li>旗袍</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>百搭上衣
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>T恤</li>
+                      <li>衬衫</li>
+                      <li>针织衫</li>
+                      <li>卫衣</li>
+                      <li>羊绒/羊毛衫</li>
+                      <li>毛衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>秋冬外套
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>棉衣</li>
+                      <li>毛呢外套</li>
+                      <li>羽绒服</li>
+                      <li>西装外套</li>
+                      <li>马甲</li>
+                      <li>针织外套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>时髦裤子
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>短裤</li>
+                      <li>休闲裤</li>
+                      <li>阔腿裤</li>
+                      <li>打底裤</li>
+                      <li>连体/背带裤</li>
+                      <li>哈伦裤</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男式内搭
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>短袖T恤</li>
+                      <li>Polo衫</li>
+                      <li>衬衫</li>
+                      <li>长袖T恤</li>
+                      <li>短袖衬衫</li>
+                      <li>卫衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男式外套
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>西装</li>
+                      <li>风衣</li>
+                      <li>夹克</li>
+                      <li>马甲/背心</li>
+                      <li>套装</li>
+                      <li>厚外套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男式裤装
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>休闲裤</li>
+                      <li>牛仔裤</li>
+                      <li>短裤</li>
+                      <li>西裤</li>
+                      <li>运动裤</li>
+                      <li>工装裤</li>
+                    </ul>
+                  </div>
+                  <div class="bn_hidden1_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden2">
+                <p>女鞋/男鞋/箱包</p>
+                <div class="bn_h bn_hidden2_h">
+                  <div class="bn_hidden2_content">
+                    <ul>
+                      <li>女靴
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>短靴</li>
+                      <li>马丁靴</li>
+                      <li>粗跟靴</li>
+                      <li>高筒靴</li>
+                      <li>切尔西靴</li>
+                      <li>踝靴</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>女单鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>浅口单鞋</li>
+                      <li>尖头鞋</li>
+                      <li>深口单鞋</li>
+                      <li>粗跟鞋</li>
+                      <li>厚底鞋</li>
+                      <li>高跟鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>女休闲鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>小白鞋</li>
+                      <li>板鞋</li>
+                      <li>老爹鞋</li>
+                      <li>运动鞋</li>
+                      <li>帆布鞋</li>
+                      <li>内增高</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男休闲鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>一脚蹬</li>
+                      <li>休闲皮鞋</li>
+                      <li>豆豆鞋</li>
+                      <li>老爹鞋</li>
+                      <li>椰子鞋</li>
+                      <li>帆布鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男商务鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>正装鞋</li>
+                      <li>系带商务鞋</li>
+                      <li>德比鞋</li>
+                      <li>套脚商务鞋</li>
+                      <li>英伦鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>女包
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>单肩包</li>
+                      <li>手提包</li>
+                      <li>双肩包</li>
+                      <li>钱包</li>
+                      <li>手拿包</li>
+                      <li>斜挎包</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男包
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>单肩包/斜挎包</li>
+                      <li>男士钱包</li>
+                      <li>商务公文包</li>
+                      <li>腰包</li>
+                      <li>双肩包</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>功能箱包
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>男/女皮带</li>
+                      <li>硬壳箱</li>
+                      <li>旅行包</li>
+                      <li>电脑包</li>
+                      <li>钥匙包</li>
+                    </ul>
+                  </div>
+                  <div class="bn_hidden2_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoTwo/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoTwo/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoTwo/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoTwo/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoTwo/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoTwo/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoTwo/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoTwo/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoTwo/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden3">
+                <p>护肤彩妆/个护</p>
+                <div class="bn_h bn_hidden3_h">
+                  <div class="bn_hidden3_content">
+                    <ul>
+                      <li>面部保养
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>眼部护理</li>
+                      <li>卸妆</li>
+                      <li>护肤套餐</li>
+                      <li>防晒</li>
+                      <li>爽肤水</li>
+                      <li>面膜</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>彩妆香水
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>美甲</li>
+                      <li>唇妆</li>
+                      <li>眼眉妆</li>
+                      <li>隔离妆前乳</li>
+                      <li>BB霜</li>
+                      <li>粉饼</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>洗发护发
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>染发/造型</li>
+                      <li>护法</li>
+                      <li>洗发水</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>沐浴润肤
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>沐浴乳/露</li>
+                      <li>沐浴套装</li>
+                      <li>身体乳</li>
+                      <li>护肤皂</li>
+                      <li>沐浴磨砂</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>口腔护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>牙刷</li>
+                      <li>口腔护理套装</li>
+                      <li>牙膏</li>
+                      <li>漱口水</li>
+                      <li>牙签/牙线</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男士护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>洁面</li>
+                      <li>面膜</li>
+                      <li>面霜</li>
+                      <li>剃须泡沫</li>
+                      <li>爽肤水</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>身体护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>止汗露</li>
+                      <li>精油护理</li>
+                      <li>手部护理</li>
+                      <li>足部护理</li>
+                      <li>身体喷雾</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>美妆工具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>身体护理工具</li>
+                      <li>面部护理工具</li>
+                      <li>化妆棉</li>
+                      <li>吸油面纸</li>
+                      <li>粉扑</li>
+                    </ul>
+                  </div>
+                  <div class="bn_hidden3_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoThree/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoThree/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoThree/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoThree/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoThree/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoThree/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoThree/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoThree/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoThree/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden4">
+                <p>运动户外</p>
+                <div class="bn_h bn_hidden4_h">
+                  <div class="bn_hidden4_content">
+                    <ul>
+                      <li>运动鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>徒步/登山鞋</li>
+                      <li>跑步鞋</li>
+                      <li>综训鞋</li>
+                      <li>篮球鞋</li>
+                      <li>羽毛球鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>运动服
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>运动裙</li>
+                      <li>长袖T恤</li>
+                      <li>运动长裤</li>
+                      <li>IP款</li>
+                      <li>工装裤</li>
+                      <li>运动卫衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>运动配件
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>帽子</li>
+                      <li>运动背包</li>
+                      <li>单肩/斜挎包</li>
+                      <li>臂包/腰包</li>
+                      <li>运动袜</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>儿童鞋服
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>儿童运动T恤</li>
+                      <li>运动休闲鞋</li>
+                      <li>儿童运动裤</li>
+                      <li>运动外套</li>
+                      <li></li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>瑜伽健身
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>瑜伽辅助</li>
+                      <li>瑜伽外套</li>
+                      <li>紧身衣</li>
+                      <li>发汗服</li>
+                      <li>瑜伽球</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>游泳装备
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>游泳镜</li>
+                      <li>型男泳装</li>
+                      <li>游泳配件</li>
+                      <li>萌娃泳装</li>
+                      <li>比基尼</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>体育用品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>跑步机</li>
+                      <li>篮球</li>
+                      <li>羽毛球/拍</li>
+                      <li>动感单车</li>
+                      <li>甩脂机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>户外装备
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>电动车</li>
+                      <li>骑行装备</li>
+                      <li>自行车</li>
+                      <li>垂钓装备</li>
+                      <li>帐篷</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div class="bn_hidden4_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFour/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFour/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFour/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFour/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFour/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFour/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFour/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFour/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFour/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden5">
+                <p>家电数码</p>
+                <div class="bn_h bn_hidden5_h">
+                  <div class="bn_hidden5_content">
+                    <ul>
+                      <li>热销手机
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>华为</li>
+                      <li>小米</li>
+                      <li>荣耀</li>
+                      <li>OPPO</li>
+                      <li>vivo</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>手机配件
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>原装配件</li>
+                      <li>苹果周边</li>
+                      <li>移动电源</li>
+                      <li>耳机</li>
+                      <li>手机储存卡</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>智能影音
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>原装耳机</li>
+                      <li>蓝牙耳机</li>
+                      <li>音箱</li>
+                      <li>投影仪</li>
+                      <li>智能手表</li>
+
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>电脑办公
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>平板电脑</li>
+                      <li>笔记本</li>
+                      <li>电纸书</li>
+                      <li>台式机</li>
+                      <li> 一体机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>摄影摄像
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>微单/单电</li>
+                      <li>数码相机</li>
+                      <li>单反相机</li>
+                      <li>摄像机</li>
+                      <li>拍立得</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>厨房电器
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>电压力锅</li>
+                      <li>电火锅</li>
+                      <li>养生壶</li>
+                      <li>电水壶</li>
+                      <li>电磁炉</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>生活电器
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>扫地机器人</li>
+                      <li>吸尘器</li>
+                      <li>除螨仪</li>
+                      <li>挂烫机</li>
+                      <li>电熨斗</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>美容护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>剃须刀</li>
+                      <li>电吹风</li>
+                      <li>颈椎按摩仪</li>
+                      <li>按摩披肩</li>
+                      <li>美容仪器</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div class="bn_hidden5_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFive/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFive/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFive/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFive/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFive/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFive/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFive/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFive/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFive/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden6">
+                <p>母婴童装</p>
+                <div class="bn_h bn_hidden6_h">
+                  <div class="bn_hidden6_content">
+                    <ul>
+                      <li>童装
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>女童上装</li>
+                      <li>文胸/内裤</li>
+                      <li>男童上装</li>
+                      <li>T恤/POLO</li>
+                      <li>儿童套装</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>婴幼专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>婴童套装</li>
+                      <li>婴童裤装</li>
+                      <li>外套/风衣</li>
+                      <li>卫衣/背心</li>
+                      <li>婴童裙装</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>童鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>女童休闲鞋</li>
+                      <li>男童休闲鞋</li>
+                      <li>亲子鞋</li>
+                      <li>男童运动鞋</li>
+                      <li>女童皮鞋皮靴</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>奶粉辅食
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>1段</li>
+                      <li>2段</li>
+                      <li>3段</li>
+                      <li>4段</li>
+                      <li>儿童营养品</li>
+                      <li>辅食</li>
+                      <li>孕妈食品</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>尿裤纸品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>拉拉裤</li>
+                      <li>纸尿裤</li>
+                      <li>湿巾/纸品</li>
+                      <li>XL码及以上</li>
+                      <li>帮宝适</li>
+                      <li>L码</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>母婴用品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>喂养用品</li>
+                      <li>洗护用品</li>
+                      <li>宝宝护肤</li>
+                      <li>清洁用品</li>
+                      <li>水杯餐具</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>孕妈专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>孕妇裤装</li>
+                      <li>家居服/哺乳衣</li>
+                      <li>孕产护肤</li>
+                      <li>孕妇文胸</li>
+                      <li>孕妇上衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>玩具文具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>模型动漫</li>
+                      <li>笔盒笔袋</li>
+                      <li>书桌台灯</li>
+                      <li>早教学习</li>
+                      <li>毛绒/娃娃</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div class="bn_hidden6_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSix/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSix/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSix/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSix/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSix/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSix/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSix/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSix/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSix/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden7">
+                <p>手表配饰</p>
+                <div class="bn_h bn_hidden7_h">
+                  <div class="bn_hidden7_content">
+                    <ul>
+                      <li>黄金钻石
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>黄金项链/吊坠</li>
+                      <li>黄金手饰</li>
+                      <li>K金项链</li>
+                      <li>黄金戒指</li>
+                      <li>铂金首饰</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>手表专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>休闲腕表</li>
+                      <li>石英女表</li>
+                      <li>石英男表</li>
+                      <li>腕表套装</li>
+                      <li>机械男表</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li> 帽子伞具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>超轻遮阳伞</li>
+                      <li>鸭舌/棒球帽</li>
+                      <li>小黑伞</li>
+                      <li>雨伞</li>
+                      <li>渔夫帽&草帽</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>眼镜专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>太阳眼镜</li>
+                      <li>眼镜框</li>
+                      <li>仿蓝光眼镜</li>
+                      <li>偏光太阳镜</li>
+                      <li>蛤蟆镜</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>饰品专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>腰带皮带</li>
+                      <li>项链</li>
+                      <li>手饰脚饰</li>
+                      <li>耳饰</li>
+                      <li>戒指</li>
+                      <li>打火机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>饰品专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>腰带皮带</li>
+                      <li>项链</li>
+                      <li>手饰脚饰</li>
+                      <li>耳饰</li>
+                      <li>戒指</li>
+                      <li>打火机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>银饰木玩
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>银手饰</li>
+                      <li>银项链吊坠</li>
+                      <li>木饰文玩</li>
+                    </ul>
+                    <br>
+
+                  </div>
+                  <div class="bn_hidden7_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSeven/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSeven/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSeven/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSeven/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSeven/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSeven/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSeven/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSeven/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSeven/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden8">
+                <p>居家用品</p>
+                <div class="bn_h bn_hidden8_h">
+                  <div class="bn_hidden8_content">
+                    <ul>
+                      <li>家纺床品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>床上套件</li>
+                      <li>被芯</li>
+                      <li>枕头</li>
+                      <li>床垫床褥</li>
+                      <li>毛毯</li>
+                      <li>床单/被套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>杯壶餐具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>保温杯壶</li>
+                      <li>保鲜/饭盒</li>
+                      <li>碗碟盘</li>
+                      <li>塑料杯</li>
+                      <li>玻璃杯</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>烹饪锅具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>锅具</li>
+                      <li>刀具/剪刀</li>
+                      <li>砧板</li>
+                      <li>厨房置物架</li>
+                      <li>厨用小工具</li>
+                      <li>铲勺</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>日用/纸品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>衣物清洁</li>
+                      <li>洗衣液</li>
+                      <li>纸巾</li>
+                      <li>毛浴巾</li>
+                      <li>家庭清洁</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>收纳晾晒
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>收纳柜</li>
+                      <li>收纳盒/箱</li>
+                      <li>收纳包袋</li>
+                      <li>收纳架</li>
+                      <li>鞋架</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>汽车用品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>座垫/座套</li>
+                      <li>车载香薰</li>
+                      <li>汽车装饰</li>
+                      <li>头枕腰靠</li>
+                      <li>美容清洗</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>家饰布艺
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>抱枕/靠枕</li>
+                      <li>坐垫/靠垫</li>
+                      <li>地毯地垫</li>
+                      <li>窗帘窗纱</li>
+                      <li>装饰画</li>
+                    </ul>
+                    <br>
+
+                  </div>
+                  <div class="bn_hidden8_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_b_toolbar">
+            <ul>
+              <li><a href="../index/index.html">
+                  首页
+                </a></li>
+              <li><a href="../ppqc/ppqc.html">
+                  品牌清仓
+                </a></li>
+              <li><a href="../loot/loot.html">
+                  唯品疯抢
+                </a></li>
+              <li>
+              <li><a href="../fast/wpkq.html">
+                  唯品快抢
+                </a></li>
+              <li>
+                <div id="n_b_more">
+                  <a href="">
+                    更多
+                  </a>
+                </div>
+              </li>
+              <!-- 隐藏更多 -->
+              <div class="nav_b_more" id="nav_bottom_more">
+                <ul>
+                  <li>运动</li>
+                  <li>家居</li>
+                  <li>生活</li>
+                  <li>配饰</li>
+                  <li>扶贫</li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- 右栏 -->
+    <div class="r_sidebar">
+      <div class="r_sidebar_top">
+        <ul class="r_sidebar_top_ul">
+          <li>
+            <div id="login">
+              <i class="fa fa-user-o"></i>
+              <p>账号</p>
+              <!-- 隐藏的登录窗口 -->
+              <div id="to_login">
+                <div class="header_per">
+                  <div class="header_per1"></div>
+                  <p>你好！请
+                    <span><a href="../loginRegist/login.html">登录</a></span>
+                    <span>|</span>
+                    <span><a href="">注册</a></span>
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box1">
+                    <div class="b_order">
+                      <span><i class="fa fa-tasks"></i></span>
+                      <p>我的订单</p>
+                    </div>
+                  </div>
+                  <div class="box2">
+                    <div class="b_money">
+                      <span><i class="fa fa-dot-circle-o"></i></span>
+                      <p>我的淘品币</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="menber">
+                  <p class="l_menber">会员俱乐部</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="r_s_shop" id="r_s_shop">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购</p>
+            <p>物</p>
+            <p>车</p>
+            <p class="r_s_shop_cart">
+              <span>0</span>
+            </p>
+          </li>
+          <!-- 优惠券 -->
+          <li id="r_m_money">
+            <i class="fa fa-money"></i>
+            <!-- hidden -->
+            <div id="r_money">
+              <span>我的优惠券</span>
+            </div>
+          </li>
+          <!-- 品牌收藏 -->
+          <li id="r_c_brand">
+            <i class="fa fa-heartbeat"></i>
+            <!-- hidden -->
+            <div id="c_brand">
+              <span>品牌收藏</span>
+            </div>
+          </li>
+          <!-- 商品收藏 -->
+          <li id="r_product">
+            <i class="fa fa-star-o"></i>
+            <!-- hidden -->
+            <div id="c_product">
+              <span>商品收藏</span>
+            </div>
+          </li>
+          <li id="m_foot">
+            <i class="fa fa-clock-o"></i>
+            <!-- hidden -->
+            <div id="c_foot">
+              <span>我的足迹</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="r_sidebar_bottom">
+        <ul>
+          <!-- 反馈 -->
+          <li id="r_mean">
+            <i class="fa fa-pencil"></i>
+            <!-- hidden -->
+            <div id="b_mean">
+              <span>反馈</span>
+            </div>
+          </li>
+          <!-- 回到顶部 -->
+          <li id="back_to_top">
+            <i class="fa fa-angle-up"></i>
+            <!-- hidden -->
+            <div id="b_top">
+              <span>返回顶部</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="carousel">
+      <div class="car_center">
+        <div class="car_c_1" id="car_img">
+          <ul>
+            <!-- 图1 -->
+            <li class="car_img img1"><a href="">
+                <img src="./img/carouse1.jpg" alt="1">
+              </a></li>
+            <!-- 图2 -->
+            <li class="car_img img2"><a href="">
+                <img src="./img/carouse2.jpg" alt="2">
+              </a></li>
+            <!-- 图3 -->
+            <li class="car_img img3"><a href="">
+                <img src="./img/carouse3.jpg" alt="3">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="car_c_2">
+          <ul>
+            <li class="car_img_text img1_text">国际轻奢鞋包大牌特卖 低至1.3折</li>
+            <li>|</li>
+            <li class="car_img_text img2_text">季末特卖-七夕献礼 黄金83元起</li>
+            <li>|</li>
+            <li class="car_img_text img3_text">斯凯奇大牌特卖 低至33元</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 特卖区 -->
+    <div class="special_t_l">
+      <div class="special_t_text">
+        <img src="./img/tptm.jpg" alt="">
+      </div>
+      <div class="special_t_img">
+        <div class="special_img1 special_img">
+          <img src="./img/21.jpg" alt="">
+        </div>
+        <div class="special_img2 special_img">
+          <img src="./img/22.jpg" alt="">
+        </div>
+        <div class="special_img3 special_img">
+          <img src="./img/23.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!--必看区  -->
+    <div class="must_t_look">
+      <!-- 文字 -->
+      <div class="must_t_text">
+        <img src="./img/mrbk.jpg" alt="">
+      </div>
+      <!-- 上框 -->
+      <div class="must_t_imgbox1">
+        <!-- 左 -->
+        <div class="m_t_i_bimg1">
+          <div class="mti_b1">
+            <div class="mti_b_1img mti_b_1img1">
+              <img src="./img/mt_img1.jpg" alt="">
+              <div class="mti_into">点击进入</div>
+              <div class="mti_btext mti_btextimg1">共1564款</div>
+            </div>
+            <div class="mti_b_1price">
+              <div class="mtbprice">
+                <img src="./img/fqj.png" alt="">
+                <span>
+                  <i class="fa fa-jpy"></i>
+                  <span>125</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mti_b1">
+            <div class="mti_b_1img mti_b_1img2">
+              <img src="./img/mt_img2.jpg" alt="">
+              <div class="mti_into">点击进入</div>
+              <div class="mti_btext mti_btextimg2">共1344款</div>
+            </div>
+            <div class="mti_b_1price">
+              <div class="mtbprice">
+                <img src="./img/fqj.png" alt="">
+                <span>
+                  <i class="fa fa-jpy"></i>
+                  <span>165</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mti_b1">
+            <div class="mti_b_1img mti_b_1img3">
+              <img src="./img/mt_img3.jpg" alt="">
+              <div class="mti_into">点击进入</div>
+              <div class="mti_btext mti_btextimg3">共1674款</div>
+            </div>
+            <div class="mti_b_1price">
+              <div class="mtbprice">
+                <img src="./img/fqj.png" alt="">
+                <span>
+                  <i class="fa fa-jpy"></i>
+                  <span>123</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 右 -->
+        <div class="m_t_i_bimg2">
+          <div class="mti_b1">
+            <div class="mti_b_1img mti_b_1img4">
+              <img src="./img/phoneimg1.jpg" alt="">
+              <div class="mti_into">点击进入</div>
+              <div class="mti_btext_2">
+                <img src="./img/fqbrand/4.png" alt="">
+              </div>
+            </div>
+            <div class="mti_b_1price">
+              <div class="mtbprice">
+                <img src="./img/fqj.png" alt="">
+                <span>
+                  <i class="fa fa-jpy"></i>
+                  <span>3999</span>
+                </span>
+
+              </div>
+            </div>
+          </div>
+          <div class="mti_b1">
+            <div class="mti_b_1img mti_b_1img5">
+              <img src="./img/hfp1.jpg" alt="">
+              <div class="mti_into">点击进入</div>
+              <div class="mti_btext_2">
+                <img src="./img/fqbrand/5.png" alt="">
+              </div>
+            </div>
+            <div class="mti_b_1price">
+              <div class="mtbprice">
+                <img src="./img/fqj.png" alt="">
+                <span>
+                  <i class="fa fa-jpy"></i>
+                  <span>255</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mti_b1">
+            <div class="mti_b_1img mti_b_1img6">
+              <img src="./img//mt_img4.jpg" alt="">
+              <div class="mti_into">点击进入</div>
+              <div class="mti_btext_2">
+                <img src="./img/fqbrand/6.png" alt="">
+              </div>
+            </div>
+            <div class="mti_b_1price">
+              <div class="mtbprice">
+                <img src="./img/fqj.png" alt="">
+                <span>
+                  <i class="fa fa-jpy"></i>
+                  <span>185</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 下框 -->
+      <div class="must_t_imgbox2">
+        <div class="must_ib2" id="mun">
+          <img src="./img/wpkq/1.png" alt="" class="wpkqimg1">
+          <img src="./img/wpkq/7.png" alt="" class="wpkqimg2">
+        </div>
+        <div class="must_ib2">
+          <img src="./img/wpkq/2.png" alt="" class="wpkqimg3">
+          <img src="./img/wpkq/8.png" alt="" class="wpkqimg4">
+        </div>
+        <div class="must_ib2">
+          <img src="./img/wpkq/3.png" alt="" class="wpkqimg5">
+          <img src="./img/wpkq/9.png" alt="" class="wpkqimg6">
+        </div>
+        <div class="must_ib2">
+          <img src="./img/wpkq/4.png" alt="" class="wpkqimg7">
+          <img src="./img/wpkq/10.png" alt="" class="wpkqimg8">
+        </div>
+        <div class="must_ib2">
+          <img src="./img/wpkq/5.png" alt="" class="wpkqimg9">
+          <img src="./img/wpkq/11.png" alt="" class="wpkqimg10">
+        </div>
+        <div class="must_ib2">
+          <img src="./img/wpkq/6.png" alt="" class="wpkqimg11">
+          <img src="./img/wpkq/12.png" alt="" class="wpkqimg12">
+        </div>
+      </div>
+    </div>
+    <!-- 新特卖 -->
+    <div class="new_buy_title"></div>
+    <div class="new_buy">
+      <!-- 倒计时 -->
+      <div id="jx" class="new_clock">
+        <div class="cont_clock">
+          <div id="clock1" class="c_clock"></div>
+          <div id="clock2" class="c_clock"></div>
+          <div id="clock3" class="c_clock"></div>
+        </div>
+      </div>
+      <!-- 精选品牌 -->
+      <!-- 精选 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/jx5.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_mask"></div>
+          <!-- 描述 -->
+          <div class="new_br_text">
+            <span class="nbt_1">斐乐FILA运动户外专场</span>
+            <p>
+              <sapn class="nbt_2">2</sapn>
+              <span class="nbt_3">折起</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/jx2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">真维斯JEANSWEST男装专场</span>
+            <p>
+              <sapn class="nbt_2">5.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/jx3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">杰米克JenMick男装专场
+            </span>
+            <p>
+              <sapn class="nbt_2">5.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/jx4.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">水星MERCURY家纺-季末特卖专场</span>
+            <p>
+              <sapn class="nbt_2">5.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 女装 -->
+      <div id="girl" class="new_brand_title">
+        <div class="cont_title_girl"></div>
+      </div>
+      <!-- 女装 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/girl1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">lisa.lisa女装-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">2.9</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/girl2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">SANDRO法式轻著女装-季未特卖8折封顶专场</span>
+            <p>
+              <sapn class="nbt_2">2</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/girl3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">马克华菲女装</span>
+            <p>
+              <sapn class="nbt_2">2.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/girl4.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">MORELINE沐菲秋季焕新</span>
+            <p>
+              <sapn class="nbt_2">3.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 鞋包 -->
+      <div id="shoes" class="new_brand_title">
+        <div class="cont_title_bag"></div>
+      </div>
+      <!-- 鞋包 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/shoes1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">热风HOrWIND男女鞋-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">1.8</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/shoes2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">意大利奢侈品牌专场</span>
+            <p>
+              <sapn class="nbt_2">2.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/shoes3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">回力Warrior男女鞋-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">4.7</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/bag1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">HouseOfHello人气女包季末特卖</span>
+            <p>
+              <sapn class="nbt_2">5.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 运动 -->
+      <div id="sport" class="new_brand_title">
+        <div class="cont_title_sport"></div>
+      </div>
+      <!-- 运动 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sport1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">斯凯奇-季末特卖专场</span>
+            <p>
+              <sapn class="nbt_2">2</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sport2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">阿迪达斯集团-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">2.2</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sport3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">皮尔瑜伽Pieryoga品质瑜伽-季未特卖</span>
+            <p>
+              <sapn class="nbt_2">2.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sport4.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">彪马PUMA男女运动&儿至-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">5.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 男装 -->
+      <div id="boy" class="new_brand_title">
+        <div class="cont_title_boy"></div>
+      </div>
+      <!-- 男装 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/boy1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">HLA海澜之家男装-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">5.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/boy2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">Reshake男女装-季末清仓</span>
+            <p>
+              <sapn class="nbt_2">3</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/boy3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">TRENDIANO男装-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">2</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/boy4.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">美特斯邦威男女装-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">3.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 美妆 -->
+      <div id="mz" class="new_brand_title">
+        <div class="cont_title_mz"></div>
+      </div>
+      <!-- 美妆 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/mz1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">日本CPB肌肤之钥-特卖专场</span>
+            <p>
+              <sapn class="nbt_2">6.6</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/mz2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">蔻驰COACH香水-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">3.3</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/mz3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">雅漾Avene护肤-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">2.4</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/mz4.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">Goat-羊奶滋润洗护专家-季末特卖专场</span>
+            <p>
+              <sapn class="nbt_2">4.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--饰品 -->
+      <div id="watch" class="new_brand_title">
+        <div class="cont_title_sp"></div>
+      </div>
+      <!-- 饰品 -->
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sp1.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">日本卡西欧CASIO潮流手表专场</span>
+            <p>
+              <sapn class="nbt_2">1.8</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sp2.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">羚羊早安遮阳伞特卖专场</span>
+            <p>
+              <sapn class="nbt_2">4.8</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="new_brand">
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sp3.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">周生生珠宝饰品专场</span>
+            <p>
+              <sapn class="nbt_2">4.5</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+        <div class="new_brandchild">
+          <div class="new_br_img">
+            <img src="./img/jx/sp4.jpg" alt="">
+          </div>
+          <div class="new_like">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-heart"></i>
+
+            <span>收藏品牌</span>
+          </div>
+          <div class="new_br_text">
+            <span class="nbt_1">DIOR时尚眼镜-季未特卖专场</span>
+            <p>
+              <sapn class="nbt_2">3.1</sapn>
+              <span class="nbt_3">折封顶</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 锚点导航栏 -->
+    <div class="anhour" id="anhour">
+      <ul id="anhour_ul">
+        <li class="mdcolor">
+          <a href="#jx">
+            <div class="anhour_typeName">
+              <i class="fa fa-spinner"></i>
+              精选
+            </div>
+          </a>
+        </li>
+        <li class="mdcolor">
+          <a href="#girl">
+            <div class="anhour_typeName">
+              <i class="fa fa-yelp"></i>
+              女装
+            </div>
+          </a>
+        </li>
+        <li class="mdcolor">
+          <a href="#shoes">
+            <div class="anhour_typeName">
+              <i class="fa fa-yelp"></i>
+              鞋包
+            </div>
+          </a>
+        </li>
+        <li class="mdcolor">
+          <a href="#sport">
+            <div class="anhour_typeName">
+              <i class="fa fa-yelp"></i>
+              运动
+            </div>
+          </a>
+        </li>
+        <li class="mdcolor">
+          <a href="#boy">
+            <div class="anhour_typeName">
+              <i class="fa fa-yelp"></i>
+              男装
+            </div>
+          </a>
+        </li>
+        <li class="mdcolor">
+          <a href="#mz">
+            <div class="anhour_typeName">
+              <i class="fa fa-yelp"></i>
+              美妆
+            </div>
+          </a>
+        </li>
+        <li class="mdcolor">
+          <a href="#watch">
+            <div class="anhour_typeName" id="anhour_last">
+              <i class="fa fa-yelp"></i>
+              饰品
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- 导航隐藏显示箭头 -->
+      <div id="anhour_hidden_box">
+        <p><i class="fa fa-arrow-circle-o-right"></i></p>
+        <p>导</p>
+        <p>航</p>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="foot-inner">
+      <div class="foot-vip">
+        <ul class="foot-vip-text">
+          <li>
+            <i class="fa fa-trophy"></i>
+            <br>
+            全球领先
+          </li>
+          <li>
+            <i class="fa fa-thumbs-o-up"></i>
+            <br>正品货源
+          </li>
+          <li>
+            <i class="fa fa-plane"></i>
+            <br>全球直采
+          </li>
+          <li>
+            <i class="fa fa-institution"></i>
+            <br>自营仓储
+          </li>
+          <li>
+            <i class="fa fa-truck"></i>
+            <br>入仓检验
+          </li>
+          <li>
+            <i class="fa fa-smile-o"></i>
+            <br>正品保险
+          </li>
+          <li>
+            <i class="fa fa-handshake-o"></i>
+            <br>无忧退换
+          </li>
+          <li>
+            <i class="fa fa-heart-o"></i>
+            <br>万千信赖
+          </li>
+        </ul>
+      </div>
+      <div class="foot-list">
+        <dl class="foot-list-text">
+          <dt>服务保障</dt>
+          <dd>
+            <a href="">正品保证</a>
+          </dd>
+          <dd>
+            <a href="">7天无理由放心退</a>
+          </dd>
+          <dd>
+            <a href="">7×15小时客户服务</a>
+          </dd>
+          <dd>
+            <a href="">7天无理由随心换</a>
+          </dd>
+        </dl>
+        <dl class="foot-list-text">
+          <dt>购物指南</dt>
+          <dd>
+            <a href="">导购演示</a>
+          </dd>
+          <dd>
+            <a href="">订单操作</a>
+          </dd>
+          <dd>
+            <a href="">会员注册</a>
+          </dd>
+          <dd>
+            <a href="">账户管理</a>
+          </dd>
+          <dd>
+            <a href="">收获样品</a>
+          </dd>
+          <dd>
+            <a href="">会员等级</a>
+          </dd>
+        </dl>
+        <dl class="foot-list-text">
+          <dt>支付方式</dt>
+          <dd>
+            <a href="">23家主流网银支付</a>
+          </dd>
+          <dd>
+            <a href="">支付宝、银联等支付</a>
+          </dd>
+          <dd>
+            <a href="">信用卡支付</a>
+          </dd>
+          <dd>
+            <a href="">零钱支付</a>
+          </dd>
+        </dl>
+        <dl class="foot-list-text">
+          <dt>配送方式</dt>
+          <dd>
+            <a href="">配送范围及运费</a>
+          </dd>
+          <dd>
+            <a href="">验货与签收</a>
+          </dd>
+        </dl>
+        <dl class="foot-list-text">
+          <dt>
+            售后服务
+          </dt>
+          <dd>
+            <a href="">退货政策</a>
+          </dd>
+          <dd>
+            <a href="">退货流程</a>
+          </dd>
+          <dd>
+            <a href="">退款方式与时效</a>
+          </dd>
+          <dd>
+            <a href="">换货服务</a>
+          </dd>
+        </dl>
+        <dl class="foot-list-last">
+          <dt>淘品会app二维码</dt>
+          <dd>
+            <img src="../footer/img/app.jpg" alt="">
+          </dd>
+          <dd>下载淘品会移动APP</dd>
+        </dl>
+      </div>
+      <div class="foot-infor">
+        <p class="foot-infor-link">
+          <a href="">关于我们</a>|
+          <a href="">About us</a>|
+          <a href="">Investor Relations</a>|
+          <a href="">媒体报道</a>|
+          <a href="">品牌招商</a>|
+          <a href="">隐私条款</a>|
+          <a href="">唯品诚聘</a>|
+          <a href="">唯品卡</a>|
+          <a href="">联系我们</a>|
+        </p>
+        <p class="foot-infor-txt">
+          Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受
+          <a href="">唯品会用户协议</a>。版权所有
+          <a href="" rel="nofollow">广州唯品会电子商务有限公司</a>
+          <br>
+          <a href="" rel="nofollow"><img src="../footer/img/police_icon.png" alt="">粤公网安备44010302111111号</a>&nbsp;&nbsp;
+          <a href="" rel="nofollow">粤ICP备08114786号</a>
+          <a href="" rel="nofollow">增值业务经营许可证：粤B2-20170777 </a>
+          <a href="" rel="nofollow">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+          <br>
+          <a href="" rel="nofollow">经营主体证照</a>
+          <a href="" rel="nofollow">风险监测信息</a>&nbsp;&nbsp;
+          <a href="" rel="nofollow">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+          <a href="" rel="nofollow"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+          <a href="" rel="nofollow">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+<script src="../nav/home.js"></script>
+
+</html>

@@ -1,0 +1,4778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>唯品快抢</title>
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="wpkq.css">
+	<link rel="stylesheet" href="../nav/home.css">
+	<link rel="stylesheet" href="../footer/footer.css">
+</head>
+<body>
+		<!-- 导航栏区域 -->
+	 <div class="h-page">
+  <!-- 头部 -->
+    <div class="header_nav">
+      <!-- top导航工具栏 -->
+      <nav class="top_nav">
+        <div class="top_nav_content">
+          <div class="city_select">
+            <div class="c_select">
+              <!-- 省份 -->
+              <select id="city">
+                <option value="广州">广州</option>
+                <option value="上海">上海</option>
+                <option value="北京">北京</option>
+                <option value="深圳">深圳</option>
+                <option value="温州">温州</option>
+              </select>
+            </div>
+          </div>
+    
+          <div class="top_nav_tool">
+            <ul>
+              <!-- 头部登录 -->
+              <li class="login_t">
+                <span>
+                  <a href="../loginRegist/login.html">
+                    请登录/注册
+                  </a>
+                </span>
+                <div class="l_b_mask"></div>
+                <!-- 隐藏登录注册 -->
+                <div class="hidden_login_t">
+                  <div class="hidden_login_t1">
+                    <div>
+                      <div class="h_lo_t1img"></div>
+                      <div class="h_lo_t1text" id="login_topNav">
+                        <span>你好！[请登录]</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden_login_t2">
+                    <div class="h_lo_t2text1">
+                      <ul>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">我的订单</a></li>
+                        <li><a href=""> 零钱</a></li>
+                      </ul>
+                    </div>
+                    <div class="h_lo_t2text2">
+                      <ul>
+                        <li><a href=""> 我的唯品币</a></li>
+                        <li><a href=""> 唯品金融</a></li>
+                        <li><a href="">我的优惠券</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="sigin">
+                <span>
+                  <a href="">
+                    <img src="../nav/img/present.png">
+                    签到有礼</a>
+                </span>
+                <div class="sigin_hidden">
+                  <span>签到</span>
+                </div>
+              </li>
+              <!-- <li>/</li> -->
+              <span>/</span>
+              <li class="my_dd"><span>
+                  <a href="">我的订单</a>
+                </span></li>
+              <li>/</li>
+              <li class="my_tm"><span>
+                  <a href="">我的特卖
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="my_tm_hidden">
+                  <ul>
+                    <li>商品收藏</li>
+                    <li>品牌收藏</li>
+                    <li>我的足迹</li>
+                  </ul>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="menber_club"><span>
+                  <a href="">会员俱乐部
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="menber_club_hidden">
+                  <ul>
+                    <li>俱乐部首页</li>
+                    <li>唯品币兑换</li>
+                  </ul>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="c_server"><span>
+                  <a href="">客户服务
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="c_server_hidden">
+                  <ul>
+                    <li>联系客服</li>
+                    <li>帮助中心</li>
+                    <li>服务中心</li>
+                    <li>知识产权</li>
+                  </ul>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="mobile_more"><span>
+                  <a href="">
+                    <i class="fa fa-mobile"></i>&nbsp;手机版</a>
+                </span>
+                <div class="mobile_qr">
+                  <img src="../nav/img/qr_code.jpg" alt="">
+                  <p>下载手机客户端&nbsp;随时抢</p>
+                </div>
+              </li>
+              <li>/</li>
+              <li class="t_more"><span>
+                  <a href="">更多
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                </span>
+                <div class="t_more_hidden">
+                  <div class="t_more_hidden1">
+                    <div>
+                      <strong>合作专区</strong>
+                      <p>唯品卡</p>
+                    </div>
+                    <div class="t_more_hidden2">
+                      <strong>关于我们</strong>
+                      <p>
+                        <span>Sell on vip</span>
+                        <span>品牌招商</span>
+                        <span>官方博客</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+    
+        </div>
+    
+      </nav>
+      <!-- logo -->
+      <div class="head_logo">
+        <!-- 图1 -->
+        <div class="head_logo_inner">
+          <div class="brand_logo">
+            <a href="">
+              <img src="../nav/img/tph.png" alt="">
+            </a>
+          </div>
+          <!-- 图2 -->
+          <div class="brand_logo2">
+            <a href=""><img src="../nav/img/2.jpg" alt=""></a>
+          </div>
+          <!-- 搜索栏 -->
+          <div class="head_search">
+            <div class="s_input">
+              <input type="text" class="s_input1">
+            </div>
+            <a href="">
+              <div class="s_button">
+                <span><i class="fa fa-search"></i></span>
+              </div>
+            </a>
+            <p>
+            <ul class="s_tool">
+              <li><span>
+                  <a href="">护肤套装</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">COACH</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">连衣裙</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">女休闲鞋</a>
+                </span></li>
+              <li>|</li>
+              <li><span>
+                  <a href="">耐克Nike</a>
+                </span></li>
+            </ul>
+            </p>
+          </div>
+          <div class="head_bag">
+            <div class="h_bag">
+              <span><i class="fa fa-shopping-cart"></i></span>
+              <span>购物车</span>
+              <span class="h_bag_n">
+                <span>&nbsp;0&nbsp;</span>
+              </span>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      <!-- 头部底部导航  -->
+      <div class="bottom_nav">
+        <div class="bottom_nav_inner">
+          <div class="nav_product" id="nav_pro">
+            <p><i class="fa fa-bars"></i>
+              商品分类</p>
+          </div>
+          <!-- 隐藏商品下拉 -->
+          <div class="bottom_nav_hidden" id="t_n_hidden">
+            <ul>
+              <li class="bn_hidden1">
+                <p>女装/男装/内衣</p>
+    
+                <div class="bn_h bn_hidden1_h">
+                  <div class="bn_hidden1_content">
+                    <ul>
+                      <li>人气美衣
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>防晒衣</li>
+                      <li>短裤</li>
+                      <li>牛仔裤</li>
+                      <li>妈·妈装</li>
+                      <li>大码女装</li>
+                      <li>外套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>美裙衣橱
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>连衣裙</li>
+                      <li>半身裙</li>
+                      <li>套装裙</li>
+                      <li>修身美裙</li>
+                      <li>白色连衣裙</li>
+                      <li>旗袍</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>百搭上衣
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>T恤</li>
+                      <li>衬衫</li>
+                      <li>针织衫</li>
+                      <li>卫衣</li>
+                      <li>羊绒/羊毛衫</li>
+                      <li>毛衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>秋冬外套
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>棉衣</li>
+                      <li>毛呢外套</li>
+                      <li>羽绒服</li>
+                      <li>西装外套</li>
+                      <li>马甲</li>
+                      <li>针织外套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>时髦裤子
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>短裤</li>
+                      <li>休闲裤</li>
+                      <li>阔腿裤</li>
+                      <li>打底裤</li>
+                      <li>连体/背带裤</li>
+                      <li>哈伦裤</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男式内搭
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>短袖T恤</li>
+                      <li>Polo衫</li>
+                      <li>衬衫</li>
+                      <li>长袖T恤</li>
+                      <li>短袖衬衫</li>
+                      <li>卫衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男式外套
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>西装</li>
+                      <li>风衣</li>
+                      <li>夹克</li>
+                      <li>马甲/背心</li>
+                      <li>套装</li>
+                      <li>厚外套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男式裤装
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>休闲裤</li>
+                      <li>牛仔裤</li>
+                      <li>短裤</li>
+                      <li>西裤</li>
+                      <li>运动裤</li>
+                      <li>工装裤</li>
+                    </ul>
+                  </div>
+                  <div class="bn_hidden1_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+    
+              </li>
+              <li class="bn_hidden2">
+                <p>女鞋/男鞋/箱包</p>
+                <div class="bn_h bn_hidden2_h">
+                  <div class="bn_hidden2_content">
+                    <ul>
+                      <li>女靴
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>短靴</li>
+                      <li>马丁靴</li>
+                      <li>粗跟靴</li>
+                      <li>高筒靴</li>
+                      <li>切尔西靴</li>
+                      <li>踝靴</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>女单鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>浅口单鞋</li>
+                      <li>尖头鞋</li>
+                      <li>深口单鞋</li>
+                      <li>粗跟鞋</li>
+                      <li>厚底鞋</li>
+                      <li>高跟鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>女休闲鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>小白鞋</li>
+                      <li>板鞋</li>
+                      <li>老爹鞋</li>
+                      <li>运动鞋</li>
+                      <li>帆布鞋</li>
+                      <li>内增高</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男休闲鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>一脚蹬</li>
+                      <li>休闲皮鞋</li>
+                      <li>豆豆鞋</li>
+                      <li>老爹鞋</li>
+                      <li>椰子鞋</li>
+                      <li>帆布鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男商务鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>正装鞋</li>
+                      <li>系带商务鞋</li>
+                      <li>德比鞋</li>
+                      <li>套脚商务鞋</li>
+                      <li>英伦鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>女包
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>单肩包</li>
+                      <li>手提包</li>
+                      <li>双肩包</li>
+                      <li>钱包</li>
+                      <li>手拿包</li>
+                      <li>斜挎包</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男包
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>单肩包/斜挎包</li>
+                      <li>男士钱包</li>
+                      <li>商务公文包</li>
+                      <li>腰包</li>
+                      <li>双肩包</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>功能箱包
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>男/女皮带</li>
+                      <li>硬壳箱</li>
+                      <li>旅行包</li>
+                      <li>电脑包</li>
+                      <li>钥匙包</li>
+                    </ul>
+                  </div>
+                  <div class="bn_hidden2_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoTwo/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoTwo/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoTwo/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoTwo/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoTwo/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoTwo/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoTwo/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoTwo/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoTwo/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden3">
+                <p>护肤彩妆/个护</p>
+                <div class="bn_h bn_hidden3_h">
+                  <div class="bn_hidden3_content">
+                    <ul>
+                      <li>面部保养
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>眼部护理</li>
+                      <li>卸妆</li>
+                      <li>护肤套餐</li>
+                      <li>防晒</li>
+                      <li>爽肤水</li>
+                      <li>面膜</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>彩妆香水
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>美甲</li>
+                      <li>唇妆</li>
+                      <li>眼眉妆</li>
+                      <li>隔离妆前乳</li>
+                      <li>BB霜</li>
+                      <li>粉饼</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>洗发护发
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>染发/造型</li>
+                      <li>护法</li>
+                      <li>洗发水</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>沐浴润肤
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>沐浴乳/露</li>
+                      <li>沐浴套装</li>
+                      <li>身体乳</li>
+                      <li>护肤皂</li>
+                      <li>沐浴磨砂</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>口腔护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>牙刷</li>
+                      <li>口腔护理套装</li>
+                      <li>牙膏</li>
+                      <li>漱口水</li>
+                      <li>牙签/牙线</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>男士护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>洁面</li>
+                      <li>面膜</li>
+                      <li>面霜</li>
+                      <li>剃须泡沫</li>
+                      <li>爽肤水</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>身体护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>止汗露</li>
+                      <li>精油护理</li>
+                      <li>手部护理</li>
+                      <li>足部护理</li>
+                      <li>身体喷雾</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>美妆工具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>身体护理工具</li>
+                      <li>面部护理工具</li>
+                      <li>化妆棉</li>
+                      <li>吸油面纸</li>
+                      <li>粉扑</li>
+                    </ul>
+                  </div>
+                  <div class="bn_hidden3_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoThree/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoThree/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoThree/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoThree/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoThree/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoThree/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoThree/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoThree/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoThree/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden4">
+                <p>运动户外</p>
+                <div class="bn_h bn_hidden4_h">
+                  <div class="bn_hidden4_content">
+                    <ul>
+                      <li>运动鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>徒步/登山鞋</li>
+                      <li>跑步鞋</li>
+                      <li>综训鞋</li>
+                      <li>篮球鞋</li>
+                      <li>羽毛球鞋</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>运动服
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>运动裙</li>
+                      <li>长袖T恤</li>
+                      <li>运动长裤</li>
+                      <li>IP款</li>
+                      <li>工装裤</li>
+                      <li>运动卫衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>运动配件
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>帽子</li>
+                      <li>运动背包</li>
+                      <li>单肩/斜挎包</li>
+                      <li>臂包/腰包</li>
+                      <li>运动袜</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>儿童鞋服
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>儿童运动T恤</li>
+                      <li>运动休闲鞋</li>
+                      <li>儿童运动裤</li>
+                      <li>运动外套</li>
+                      <li></li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>瑜伽健身
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>瑜伽辅助</li>
+                      <li>瑜伽外套</li>
+                      <li>紧身衣</li>
+                      <li>发汗服</li>
+                      <li>瑜伽球</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>游泳装备
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>游泳镜</li>
+                      <li>型男泳装</li>
+                      <li>游泳配件</li>
+                      <li>萌娃泳装</li>
+                      <li>比基尼</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>体育用品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>跑步机</li>
+                      <li>篮球</li>
+                      <li>羽毛球/拍</li>
+                      <li>动感单车</li>
+                      <li>甩脂机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>户外装备
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>电动车</li>
+                      <li>骑行装备</li>
+                      <li>自行车</li>
+                      <li>垂钓装备</li>
+                      <li>帐篷</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div class="bn_hidden4_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFour/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFour/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFour/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFour/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFour/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFour/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFour/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFour/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFour/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden5">
+                <p>家电数码</p>
+                <div class="bn_h bn_hidden5_h">
+                  <div class="bn_hidden5_content">
+                    <ul>
+                      <li>热销手机
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>华为</li>
+                      <li>小米</li>
+                      <li>荣耀</li>
+                      <li>OPPO</li>
+                      <li>vivo</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>手机配件
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>原装配件</li>
+                      <li>苹果周边</li>
+                      <li>移动电源</li>
+                      <li>耳机</li>
+                      <li>手机储存卡</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>智能影音
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>原装耳机</li>
+                      <li>蓝牙耳机</li>
+                      <li>音箱</li>
+                      <li>投影仪</li>
+                      <li>智能手表</li>
+    
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>电脑办公
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>平板电脑</li>
+                      <li>笔记本</li>
+                      <li>电纸书</li>
+                      <li>台式机</li>
+                      <li> 一体机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>摄影摄像
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>微单/单电</li>
+                      <li>数码相机</li>
+                      <li>单反相机</li>
+                      <li>摄像机</li>
+                      <li>拍立得</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>厨房电器
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>电压力锅</li>
+                      <li>电火锅</li>
+                      <li>养生壶</li>
+                      <li>电水壶</li>
+                      <li>电磁炉</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>生活电器
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>扫地机器人</li>
+                      <li>吸尘器</li>
+                      <li>除螨仪</li>
+                      <li>挂烫机</li>
+                      <li>电熨斗</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>美容护理
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>剃须刀</li>
+                      <li>电吹风</li>
+                      <li>颈椎按摩仪</li>
+                      <li>按摩披肩</li>
+                      <li>美容仪器</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div class="bn_hidden5_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFive/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFive/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoFive/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFive/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFive/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoFive/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFive/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFive/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoFive/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden6">
+                <p>母婴童装</p>
+                <div class="bn_h bn_hidden6_h">
+                  <div class="bn_hidden6_content">
+                    <ul>
+                      <li>童装
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>女童上装</li>
+                      <li>文胸/内裤</li>
+                      <li>男童上装</li>
+                      <li>T恤/POLO</li>
+                      <li>儿童套装</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>婴幼专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>婴童套装</li>
+                      <li>婴童裤装</li>
+                      <li>外套/风衣</li>
+                      <li>卫衣/背心</li>
+                      <li>婴童裙装</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>童鞋
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>女童休闲鞋</li>
+                      <li>男童休闲鞋</li>
+                      <li>亲子鞋</li>
+                      <li>男童运动鞋</li>
+                      <li>女童皮鞋皮靴</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>奶粉辅食
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>1段</li>
+                      <li>2段</li>
+                      <li>3段</li>
+                      <li>4段</li>
+                      <li>儿童营养品</li>
+                      <li>辅食</li>
+                      <li>孕妈食品</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>尿裤纸品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>拉拉裤</li>
+                      <li>纸尿裤</li>
+                      <li>湿巾/纸品</li>
+                      <li>XL码及以上</li>
+                      <li>帮宝适</li>
+                      <li>L码</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>母婴用品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>喂养用品</li>
+                      <li>洗护用品</li>
+                      <li>宝宝护肤</li>
+                      <li>清洁用品</li>
+                      <li>水杯餐具</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>孕妈专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>孕妇裤装</li>
+                      <li>家居服/哺乳衣</li>
+                      <li>孕产护肤</li>
+                      <li>孕妇文胸</li>
+                      <li>孕妇上衣</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>玩具文具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>模型动漫</li>
+                      <li>笔盒笔袋</li>
+                      <li>书桌台灯</li>
+                      <li>早教学习</li>
+                      <li>毛绒/娃娃</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div class="bn_hidden6_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSix/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSix/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSix/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSix/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSix/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSix/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSix/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSix/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSix/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden7">
+                <p>手表配饰</p>
+                <div class="bn_h bn_hidden7_h">
+                  <div class="bn_hidden7_content">
+                    <ul>
+                      <li>黄金钻石
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>黄金项链/吊坠</li>
+                      <li>黄金手饰</li>
+                      <li>K金项链</li>
+                      <li>黄金戒指</li>
+                      <li>铂金首饰</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>手表专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>休闲腕表</li>
+                      <li>石英女表</li>
+                      <li>石英男表</li>
+                      <li>腕表套装</li>
+                      <li>机械男表</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li> 帽子伞具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>超轻遮阳伞</li>
+                      <li>鸭舌/棒球帽</li>
+                      <li>小黑伞</li>
+                      <li>雨伞</li>
+                      <li>渔夫帽&草帽</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>眼镜专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>太阳眼镜</li>
+                      <li>眼镜框</li>
+                      <li>仿蓝光眼镜</li>
+                      <li>偏光太阳镜</li>
+                      <li>蛤蟆镜</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>饰品专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>腰带皮带</li>
+                      <li>项链</li>
+                      <li>手饰脚饰</li>
+                      <li>耳饰</li>
+                      <li>戒指</li>
+                      <li>打火机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>饰品专区
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>腰带皮带</li>
+                      <li>项链</li>
+                      <li>手饰脚饰</li>
+                      <li>耳饰</li>
+                      <li>戒指</li>
+                      <li>打火机</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>银饰木玩
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>银手饰</li>
+                      <li>银项链吊坠</li>
+                      <li>木饰文玩</li>
+                    </ul>
+                    <br>
+    
+                  </div>
+                  <div class="bn_hidden7_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSeven/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSeven/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoSeven/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSeven/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSeven/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoSeven/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSeven/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSeven/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoSeven/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="bn_hidden8">
+                <p>居家用品</p>
+                <div class="bn_h bn_hidden8_h">
+                  <div class="bn_hidden8_content">
+                    <ul>
+                      <li>家纺床品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>床上套件</li>
+                      <li>被芯</li>
+                      <li>枕头</li>
+                      <li>床垫床褥</li>
+                      <li>毛毯</li>
+                      <li>床单/被套</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>杯壶餐具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>保温杯壶</li>
+                      <li>保鲜/饭盒</li>
+                      <li>碗碟盘</li>
+                      <li>塑料杯</li>
+                      <li>玻璃杯</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>烹饪锅具
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>锅具</li>
+                      <li>刀具/剪刀</li>
+                      <li>砧板</li>
+                      <li>厨房置物架</li>
+                      <li>厨用小工具</li>
+                      <li>铲勺</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>日用/纸品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>衣物清洁</li>
+                      <li>洗衣液</li>
+                      <li>纸巾</li>
+                      <li>毛浴巾</li>
+                      <li>家庭清洁</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>收纳晾晒
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>收纳柜</li>
+                      <li>收纳盒/箱</li>
+                      <li>收纳包袋</li>
+                      <li>收纳架</li>
+                      <li>鞋架</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>汽车用品
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>座垫/座套</li>
+                      <li>车载香薰</li>
+                      <li>汽车装饰</li>
+                      <li>头枕腰靠</li>
+                      <li>美容清洗</li>
+                    </ul>
+                    <br>
+                    <ul>
+                      <li>家饰布艺
+                        <i class="fa fa-chevron-right"></i>
+                      </li>
+                      <li>抱枕/靠枕</li>
+                      <li>坐垫/靠垫</li>
+                      <li>地毯地垫</li>
+                      <li>窗帘窗纱</li>
+                      <li>装饰画</li>
+                    </ul>
+                    <br>
+    
+                  </div>
+                  <div class="bn_hidden8_brand">
+                    <div class="bn_hidden_brandTitle">品牌推荐</div>
+                    <div class="bn_hidden_brandLogo">
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo1.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo2.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_1">
+                          <img src="../nav/img/brandLogoOne/brandLogo3.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo4.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo5.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_2">
+                          <img src="../nav/img/brandLogoOne/brandLogo6.png" alt="">
+                        </div>
+                      </div>
+                      <div class="brandLogo_line">
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo7.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo8.png" alt="">
+                        </div>
+                        <div class="brandLogoImg_3">
+                          <img src="../nav/img/brandLogoOne/brandLogo9.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_b_toolbar">
+            <ul>
+              <li><a href="../index/index.html">
+                  首页
+                </a></li>
+              <li><a href="../ppqc/ppqc.html">
+                  品牌清仓
+                </a></li>
+              <li><a href="../loot/loot.html">
+                  唯品疯抢
+                </a></li>
+              <li>
+              <li><a href="../fast/wpkq.html">
+                  唯品快抢
+                </a></li>
+              <li>
+                <div id="n_b_more">
+                  <a href="">
+                    更多
+                  </a>
+                </div>
+              </li>
+              <!-- 隐藏更多 -->
+              <div class="nav_b_more" id="nav_bottom_more">
+                <ul>
+                  <li>运动</li>
+                  <li>家居</li>
+                  <li>生活</li>
+                  <li>配饰</li>
+                  <li>扶贫</li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+    
+        </div>
+      </div>
+    
+    </div>
+    <!-- 右栏 -->
+    <div class="r_sidebar">
+      <div class="r_sidebar_top">
+        <ul class="r_sidebar_top_ul">
+          <li>
+            <div id="login">
+              <i class="fa fa-user-o"></i>
+              <p>账号</p>
+              <!-- 隐藏的登录窗口 -->
+              <div id="to_login">
+                <div class="header_per">
+                  <div class="header_per1"></div>
+                  <p>你好！请
+                    <span><a href="../loginRegist/login.html">登录</a></span>
+                    <span>|</span>
+                    <span><a href="">注册</a></span>
+                  </p>
+                </div>
+                <div class="box">
+                  <div class="box1">
+                    <div class="b_order">
+                      <span><i class="fa fa-tasks"></i></span>
+                      <p>我的订单</p>
+                    </div>
+                  </div>
+                  <div class="box2">
+                    <div class="b_money">
+                      <span><i class="fa fa-dot-circle-o"></i></span>
+                      <p>我的淘品币</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="menber">
+                  <p class="l_menber">会员俱乐部</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="r_s_shop" id="r_s_shop">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购</p>
+            <p>物</p>
+            <p>车</p>
+            <p class="r_s_shop_cart">
+              <span>0</span>
+            </p>
+          </li>
+          <!-- 优惠券 -->
+          <li id="r_m_money">
+            <i class="fa fa-money"></i>
+            <!-- hidden -->
+            <div id="r_money">
+              <span>我的优惠券</span>
+            </div>
+          </li>
+          <!-- 品牌收藏 -->
+          <li id="r_c_brand">
+            <i class="fa fa-heartbeat"></i>
+            <!-- hidden -->
+            <div id="c_brand">
+              <span>品牌收藏</span>
+            </div>
+          </li>
+          <!-- 商品收藏 -->
+          <li id="r_product">
+            <i class="fa fa-star-o"></i>
+            <!-- hidden -->
+            <div id="c_product">
+              <span>商品收藏</span>
+            </div>
+          </li>
+          <li id="m_foot">
+            <i class="fa fa-clock-o"></i>
+            <!-- hidden -->
+            <div id="c_foot">
+              <span>我的足迹</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="r_sidebar_bottom">
+        <ul>
+          <!-- 反馈 -->
+          <li id="r_mean">
+            <i class="fa fa-pencil"></i>
+            <!-- hidden -->
+            <div id="b_mean">
+              <span>反馈</span>
+            </div>
+          </li>
+          <!-- 回到顶部 -->
+          <li id="back_to_top">
+            <i class="fa fa-angle-up"></i>
+            <!-- hidden -->
+            <div id="b_top">
+              <span>返回顶部</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!-- <div class="fast_content">
+	
+</div> -->
+	<!-- 头部展示栏 -->
+	<div class="fast-top">
+		<div class="wpkq-logo">
+			<img src="img/wpkqlogo.png" alt="">
+		</div>
+		<div class="fast-show">
+			<div class="show-top">
+				<img src="img/四件套.jpg" alt="">
+				<div class="show-top-text">
+				    小清新简约四件套
+			    </div>
+				<span class="discount">折后价</span>
+				<span class="price">¥65</span>
+		    </div>
+		    <div class="show-top">
+		    	<img src="img/海盐皂.jpg" alt="">
+		    	<div class="show-top-text">
+		    		除螨抑螨清痘海盐皂
+		    	</div>
+		    	<span class=" discount">折后价</span>
+		    	<span class="price">¥27</span>
+		    </div>
+		    <div class="show-top">
+		    	<img src="img/BB霜.jpg" alt="">
+		    	<div class="show-top-text">
+		    		一抹出水 隔离定妆
+		    	</div>
+		    	<span class=" discount">折后价</span>
+		    	<span class="price">¥75</span>
+		    </div>
+		    <div class="show-top">
+		    	<img src="img/祛痘.jpg" alt="">
+		    	<div class="show-top-text">
+		    		根源战痘 淡印不留痕
+		    	</div>
+		    	<span class=" discount">折后价</span>
+		    	<span class="price">¥149</span>
+		    </div>
+		    <div class="show-top">
+		    	<img src="img/单人床单被套.jpg" alt="">
+		    	<div class="show-top-text">
+		    		四季通用不起球不褪色
+		    	</div>
+		    	<span class=" discount">折后价</span>
+		    	<span class="price">¥17</span>
+		    </div>
+	    </div>
+	</div>
+	<!-- 热销分类 -->
+	<div class="hotsale">
+		<div class="hot-top">
+			<span></span>
+			<div class="hot-name">
+				热销分类
+			</div>
+			<span></span>
+		</div>
+		<div class="hot-classify">
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>面部护理</p>
+				<img src="img/面部护理.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>美容套装</p>
+				<img src="img/美容套装.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>迷人彩妆</p>
+				<img src="img/迷人彩妆.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>餐厨日用</p>
+				<img src="img/餐厨日用.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>清洁用品</p>
+				<img src="img/清洁用品.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>床上用品</p>
+				<img src="img/床上用品.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>食品酒水</p>
+				<img src="img/食品酒水.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>营养保健</p>
+				<img src="img/营养保健.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>小家电数码</p>
+				<img src="img/小家电数码.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>个人护理</p>
+				<img src="img/个人护理.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>母婴专区</p>
+				<img src="img/母婴专区.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>时尚女装</p>
+				<img src="img/时尚女装.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>男士专区</p>
+				<img src="img/男士专区.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>鞋靴箱包</p>
+				<img src="img/鞋靴箱包.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>内衣家居服</p>
+				<img src="img/内衣家居服.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>运动装备</p>
+				<img src="img/运动装备.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>首饰配饰</p>
+				<img src="img/首饰配饰.jpg" alt="">
+			</div>
+			<div class="hot-show">
+        <div class="off_bg">
+          
+        </div>
+				<p>大家电家具</p>
+				<img src="img/大家电家具.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- 今日必抢 -->
+	<div class="jrbq">
+		<div class="jrbq-top">
+			<span></span>
+			<div class="jrbq-name">
+				<a name="a"></a>
+				今日必抢
+			</div>
+			<span></span>
+		</div>
+		<div class="jrbq-show">
+			<!-- 超人吹风机 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/电吹风.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>超人|吹风机家用理发店专业电吹风机筒大功率负离子网红RD72030</span>
+					</div>
+					<div class="product-title">
+						强劲负离子网红电吹风
+					</div>
+					<div class="product-prgress">
+						累计热卖5.9万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥89
+						</span>
+						<span class="price-pass"><s>￥699</s></span>
+						<span class="price-now">1.3折</span>
+					</div>
+				</div>
+			</a>
+			<!-- 蓝月亮 -->
+			<a href="../blueMoon/blueMoon.html" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/蓝月亮.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>蓝月亮|唯品专供爆款薰衣草洗衣液机洗家庭套装足足15斤全年用量瓶袋装</span>
+					</div>
+					<div class="product-title">
+						足足15斤 全年用量
+					</div>
+					<div class="product-prgress">
+						累计热卖81.4万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥89
+						</span>
+						<span class="price-pass"><s>￥172</s></span>
+						<span class="price-now">5.2折</span>
+					</div>
+				</div>
+			</a>
+			<!-- 三只松鼠 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/三只松鼠.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>三只松鼠|推荐_平均20/箱 1000g鲜乳大饼三只松鼠饼干牛奶早餐糕点休闲零食</span>
+					</div>
+					<div class="product-title">
+						可以嚼着吃的草原鲜奶
+					</div>
+					<div class="product-prgress">
+						累计热卖14.3万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥24
+						</span>
+						<span class="price-pass"><s>￥35</s></span>
+						<span class="price-now">5.7折</span>
+					</div>
+				</div>
+			</a>
+			<!-- 枕头 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/枕头.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>金橡树|泰国原产进口软硬适中波浪枕93%乳胶含量乳胶枕芯 乳胶枕头</span>
+					</div>
+					<div class="product-title">
+						泰国原产
+					</div>
+					<div class="product-prgress">
+						累计热卖11.0万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥84
+						</span>
+						<span class="price-pass"><s>￥167</s></span>
+						<span class="price-now">5.1折</span>
+					</div>
+				</div>
+			</a>
+	
+			<!-- 阿道夫 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/阿道夫.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>阿道夫|【三十同款】阿道夫精油系列去屑控油止痒洗发水洗发香乳520ml</span>
+					</div>
+					<div class="product-title">
+						持久留香控油清爽
+					</div>
+					<div class="product-prgress">
+						累计热卖3.7万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥45
+						</span>
+						<span class="price-pass"><s>￥85</s></span>
+						<span class="price-now">5.3折</span>
+					</div>
+				</div>
+			</a>
+	
+			<!-- 美颈霜 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/美颈霜.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>自然旋律|【口碑爆款颈纹小熨斗】六胜肽淡化颈纹提拉紧致颈霜颈膜120g</span>
+					</div>
+					<div class="product-title">
+						颈纹小熨斗按摩美颈霜
+					</div>
+					<div class="product-prgress">
+						累计热卖2.8万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥58
+						</span>
+						<span class="price-pass"><s>￥218</s></span>
+						<span class="price-now">2.7折</span>
+					</div>
+				</div>
+			</a>
+	
+			<!-- 医食同源 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/医食同源.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>医食同源.COM|【日夜纤体】2月量日夜酵素组合 Diet酵素+夜间酵素增量版</span>
+					</div>
+					<div class="product-title">
+						2月大容量
+					</div>
+					<div class="product-prgress">
+						累计热卖5.3万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥137
+						</span>
+						<span class="price-pass"><s>￥716</s></span>
+						<span class="price-now">2折</span>
+					</div>
+				</div>
+			</a>
+	
+			<!-- 低脂 -->
+			<a href="" title="">
+				<div class="jrbq-product">
+					<div class="mti_into">点击进入</div>
+					<div class="product-img">
+						<img src="img/低脂.jpg" alt="">
+					</div>
+					<div class="product-tip">
+						<span>Maxigenes|澳洲Maxigenes美可卓蓝胖子脱脂奶粉 1000g</span>
+					</div>
+					<div class="product-title">
+						低脂营养好喝不怕胖
+					</div>
+					<div class="product-prgress">
+						累计热卖2.0万件
+					</div>
+					<div class="product-price">
+						<span class="discount"> 折后价
+						</span>
+						<span class="price">
+							¥99
+						</span>
+						<span class="price-pass"><s>￥199</s></span>
+						<span class="price-now">5折</span>
+					</div>
+				</div>
+			</a>
+	
+		</div>
+	</div>
+	<!-- 海外尖货 -->
+	<div class="hwjh">
+		<div class="hwjh-top">
+			<span></span>
+			<div class="hwjh-name">
+				<a name="b"></a>
+				海外尖货
+			</div>
+			<span></span>
+		</div>
+		<div class="hwjh-show">
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/乳钙.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>Bio Island|澳洲婴幼儿童乳钙胶囊90粒婴儿补钙VD维D钙片易吸收液体钙</span>
+				</div>
+				<div class="product-title">
+					乳钙+VD宝宝吸收好
+				</div>
+				<div class="product-prgress">
+					累计热卖38.7万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥90
+					</span>
+					<span class="price-pass"><s>￥228</s></span>
+					<span class="price-now">3.9折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/天然维生素.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>Healthy Care|澳洲天然维生素C咀嚼片500mg500片VC维C</span>
+				</div>
+				<div class="product-title">
+					美白增免疫可吃一整年
+				</div>
+				<div class="product-prgress">
+					累计热卖4.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥68
+					</span>
+					<span class="price-pass"><s>￥299</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/孕妇胶囊.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>Bio Island|澳洲孕妇DHA胶囊60粒天然海藻油非鱼油备孕哺乳期营养</span>
+				</div>
+				<div class="product-title">
+					孕期DHA宝宝更聪明
+				</div>
+				<div class="product-prgress">
+					累计热卖29.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥106
+					</span>
+					<span class="price-pass"><s>￥318</s></span>
+					<span class="price-now">3.3折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/痘痘贴.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>VT| CICA老虎痘痘贴72枚装 隐形消痘净痘祛痘贴超薄吸浓</span>
+				</div>
+				<div class="product-title">
+					隐形消痘 服帖上妆
+				</div>
+				<div class="product-prgress">
+					累计热卖3.2万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥65
+					</span>
+					<span class="price-pass"><s>￥232</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/葡萄籽.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>Healthy Care|澳洲葡萄籽+维生素C+胶原蛋白胶囊90粒</span>
+				</div>
+				<div class="product-title">
+					三合一高效美白抗衰老
+				</div>
+				<div class="product-prgress">
+					累计热卖9.5万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥75
+					</span>
+					<span class="price-pass"><s>￥519</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/超强抗菌.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>花王|日本花王KAO超强抗菌EX强效洁净酵素洗衣液补充装770g</span>
+				</div>
+				<div class="product-title">
+					超强抗菌 强效洁净
+				</div>
+				<div class="product-prgress">
+					累计热卖7.7万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥25
+					</span>
+					<span class="price-pass"><s>￥118</s></span>
+					<span class="price-now">2.2折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/面膜.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>JAYJUN|捷俊 水光面膜三部曲10片 玻尿酸补水保湿锁水面膜</span>
+				</div>
+				<div class="product-title">
+					润彻肌底 焕现水光
+				</div>
+				<div class="product-prgress">
+					累计热卖8.4万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥49
+					</span>
+					<span class="price-pass"><s>￥248</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hwjh-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/维生素小熊糖.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>丽贵|小黄人联名 丽贵儿童复合维生素小熊糖 190粒</span>
+				</div>
+				<div class="product-title">
+					1粒补充13种营养
+				</div>
+				<div class="product-prgress">
+					累计热卖2.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥99
+					</span>
+					<span class="price-pass"><s>￥399</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 护肤彩妆 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="c"></a>
+				护肤彩妆
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/去黑头hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>番茄派|TOMATO PAI 三部去黑头收缩毛孔鼻贴膜套装10片</span>
+				</div>
+				<div class="product-title">
+					去黑头，收缩毛孔
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥44
+					</span>
+					<span class="price-pass"><s>￥196</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/小奥汀hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>小奥汀|【薇娅推荐】绚彩纤长睫毛膏 浓密防水卷翘持久加长自然不晕染</span>
+				</div>
+				<div class="product-title">
+					浓密卷翘防水不晕染
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥79</s></span>
+					<span class="price-now">7.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/李医生hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>李医生|【口碑推荐 大容量】嫩肤去角质凝露 250g 去死皮深层清洁</span>
+				</div>
+				<div class="product-title">
+					品牌推荐 温和去角质
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥34
+					</span>
+					<span class="price-pass"><s>￥169</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/火烈鸟hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>火烈鸟|【眼妆两件套】彩妆套组睫毛膏眼线液笔防水速干可选眉笔</span>
+				</div>
+				<div class="product-title">
+					眼部套装 魅惑大眼
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥27
+					</span>
+					<span class="price-pass"><s>￥94</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/美丽工匠hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>美丽工匠|80抽加厚卷筒洗脸巾不掉絮棉柔抽取一次性洗脸巾洁面巾美容巾</span>
+				</div>
+				<div class="product-title">
+					爆款80段加厚洗脸巾
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥69</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/美甲hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>稚优泉|【夏日美甲 持色显白】印章指甲油 持久显色不可撕拉ins超火</span>
+				</div>
+				<div class="product-title">
+					绝色美甲 持久显白
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥9
+					</span>
+					<span class="price-pass"><s>￥39</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/自然旋律hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>自然旋律|【口碑爆款颈纹小熨斗】六胜肽淡化颈纹提拉紧致颈霜颈膜120g</span>
+				</div>
+				<div class="product-title">
+					颈纹小熨斗按摩美颈霜
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥58
+					</span>
+					<span class="price-pass"><s>￥218</s></span>
+					<span class="price-now">2.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/谜尚hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>谜尚|【断货王眉笔】自动美眉笔 双头双效防水防汗持久不晕染 颜色任选</span>
+				</div>
+				<div class="product-title">
+					双头双效 勾勒型眉
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 生活超市 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="d"></a>
+				生活超市
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/乐吉福shcs.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>乐吉福|【5罐装】海苔夹心40gX5罐儿童零食芝麻休闲宝宝小吃李佳琪推荐</span>
+				</div>
+				<div class="product-title">
+					5罐装 李佳琪推荐
+				</div>
+				<div class="product-prgress">
+					累计热卖2.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥32
+					</span>
+					<span class="price-pass"><s>￥65</s></span>
+					<span class="price-now">5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/施颜氏shcs.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>施颜氏|美国stridex水杨酸棉片去闭口粉刺黑头清洁刷酸祛痘印收缩毛孔</span>
+				</div>
+				<div class="product-title">
+					美国原装 刷酸祛痘
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥55
+					</span>
+					<span class="price-pass"><s>￥88</s></span>
+					<span class="price-now">6.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/仁和.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>仁和|小红樱天然维生素e软胶囊60粒/盒</span>
+				</div>
+				<div class="product-title">
+					内服外敷 嫩白肌肤
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥23
+					</span>
+					<span class="price-pass"><s>￥49</s></span>
+					<span class="price-now">4.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/口罩.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>COE|50片/盒（非独立包装）一次性医用成人口罩</span>
+				</div>
+				<div class="product-title">
+					高效防护口罩
+				</div>
+				<div class="product-prgress">
+					累计热卖16.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥39
+					</span>
+					<span class="price-pass"><s>￥149</s></span>
+					<span class="price-now">2.6折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/红豆薏米shcs.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>塔木金|红豆薏米祛湿代餐粉薏仁减肥早餐速食懒人辟谷即食饱腹杂粮粥500g</span>
+				</div>
+				<div class="product-title">
+					健康代餐 远离湿气
+				</div>
+				<div class="product-prgress">
+					累计热卖6.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥54
+					</span>
+					<span class="price-pass"><s>￥158</s></span>
+					<span class="price-now">3.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/菲力shcs.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>东方不败|原肉整切菲力牛排10片*130g 新鲜黑椒西冷肉眼儿童</span>
+				</div>
+				<div class="product-title">
+					冷链配送 新鲜到家
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥119
+					</span>
+					<span class="price-pass"><s>￥238</s></span>
+					<span class="price-now">5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/自然旋律hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>自然旋律|【口碑爆款颈纹小熨斗】六胜肽淡化颈纹提拉紧致颈霜颈膜120g</span>
+				</div>
+				<div class="product-title">
+					颈纹小熨斗按摩美颈霜
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥58
+					</span>
+					<span class="price-pass"><s>￥218</s></span>
+					<span class="price-now">2.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/谜尚hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>谜尚|【断货王眉笔】自动美眉笔 双头双效防水防汗持久不晕染 颜色任选</span>
+				</div>
+				<div class="product-title">
+					双头双效 勾勒型眉
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 家居家纺 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="e"></a>
+				家居家纺
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>黛恒|3层纱布枕巾纯棉一对装成人情侣婴儿童单人学生全棉枕头巾一对装A</span>
+				</div>
+				<div class="product-title">
+					3层纱枕巾舒适透气
+				</div>
+				<div class="product-prgress">
+					累计热卖2.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥29
+					</span>
+					<span class="price-pass"><s>￥159</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>觉先生|水洗床单单件纯色风150x200x230米学生宿舍单人床被单被罩双人</span>
+				</div>
+				<div class="product-title">
+					四季通用不起球不褪色
+				</div>
+				<div class="product-prgress">
+					累计热卖2.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥99</s></span>
+					<span class="price-now">1.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>百家好世|免手洗拖把桶旋转拖把家用懒人拖把拖布桶吸水墩布拖地木地板拖把</span>
+				</div>
+				<div class="product-title">
+					质量升级 省力不脏手
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥53
+					</span>
+					<span class="price-pass"><s>￥109</s></span>
+					<span class="price-now">4.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>N&L|五星级酒店铂金系列高颜值柔软吸水加大加厚缎档纯棉成人浴巾</span>
+				</div>
+				<div class="product-title">
+					高颜值纯棉吸水大浴巾
+				</div>
+				<div class="product-prgress">
+					累计热卖2.4万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥56
+					</span>
+					<span class="price-pass"><s>￥398</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>太力|80抽加厚卷筒洗脸巾不掉絮棉柔抽取一次性洗脸巾洁面巾美容巾</span>
+				</div>
+				<div class="product-title">
+					爆款80段加厚洗脸巾
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥69</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>六神|防蚊喷雾 驱蚊液 止痒花露水 家庭装花露水 180ml*3</span>
+				</div>
+				<div class="product-title">
+					网红爆款 限量特惠
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥49
+					</span>
+					<span class="price-pass"><s>￥99</s></span>
+					<span class="price-now">4.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>AKAW|1.5L日本爱家屋家用大容量玻璃内胆保温热水瓶咖啡保温壶</span>
+				</div>
+				<div class="product-title">
+					日本品牌 长效保温
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥79
+					</span>
+					<span class="price-pass"><s>￥300</s></span>
+					<span class="price-now">2.6折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/home8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>谜尚|【断货王眉笔】自动美眉笔 双头双效防水防汗持久不晕染 颜色任选</span>
+				</div>
+				<div class="product-title">
+					双头双效 勾勒型眉
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 大小家电 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="f"></a>
+				大小家电
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>乐尔康|按摩椅全自动家用电动全身豪华太空舱按摩零重力父母礼物</span>
+				</div>
+				<div class="product-title">
+					质保五年 拆箱即用
+				</div>
+				<div class="product-prgress">
+					累计热卖1.5万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥1880
+					</span>
+					<span class="price-pass"><s>￥6890</s></span>
+					<span class="price-now">2.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>WIKILEAKS|电睫毛卷翘器电动加热烫睫毛器睫毛烫睫毛夹定型剃眉电动修眉刀女</span>
+				</div>
+				<div class="product-title">
+					一卷即翘 电眼迷人
+				</div>
+				<div class="product-prgress">
+					累计热卖4.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥43
+					</span>
+					<span class="price-pass"><s>￥199</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>小熊|养生壶家用多功能煮茶壶办公室花茶壶电热水壶迷你玻璃煮茶器</span>
+				</div>
+				<div class="product-title">
+					1.5升大容量
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥84
+					</span>
+					<span class="price-pass"><s>￥499</s></span>
+					<span class="price-now">1.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>茗振|眼部按摩器仪美眼护眼仪眼睛热敷去眼袋神器黑眼圈眼罩美容仪</span>
+				</div>
+				<div class="product-title">
+					震动按摩 缓解眼疲劳
+				</div>
+				<div class="product-prgress">
+					累计热卖2.2万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥57
+					</span>
+					<span class="price-pass"><s>￥199</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>羽博|迷你风扇 3档夹立风扇桌面手持电风扇静音办公室小风扇可充电</span>
+				</div>
+				<div class="product-title">
+					12小时续航三档夹立
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥48
+					</span>
+					<span class="price-pass"><s>￥197</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>香山|电子秤体重秤人体秤电子称体重秤家用精准减肥秤小型体重计</span>
+				</div>
+				<div class="product-title">
+					喝杯水都能感知的精准
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥39
+					</span>
+					<span class="price-pass"><s>￥197</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>小熊|绞肉机家用电动饺馅碎菜全自动小型搅拌打肉蒜泥料理机</span>
+				</div>
+				<div class="product-title">
+					颜值升级 高速绞肉机
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥85
+					</span>
+					<span class="price-pass"><s>￥599</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>利仁|家用加深烤盘电饼铛档双面烤肉机烙饼锅电烤盘煎烤机煎饼锅X2901A</span>
+				</div>
+				<div class="product-title">
+					旋钮调温 加深烤盘
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥103
+					</span>
+					<span class="price-pass"><s>￥529</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 手机数码 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="g"></a>
+				手机数码
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>品胜|苹果x钢化膜xsmax/xr全屏iphone11pro/6/6s/7/8/7plus手机膜</span>
+				</div>
+				<div class="product-title">
+					升级抗摔 贴坏包赔
+				</div>
+				<div class="product-prgress">
+					累计热卖1.5万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥9
+					</span>
+					<span class="price-pass"><s>￥45</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>冈耐士|金属桌面手机支架便携式折叠直播手机座伸缩ipad平板懒人支架</span>
+				</div>
+				<div class="product-title">
+					手机桌面支架
+				</div>
+				<div class="product-prgress">
+					累计热卖4.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥24
+					</span>
+					<span class="price-pass"><s>￥99</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>南孚|南孚电池 多色5号7号6粒 聚能环2代 6粒彩虹电池</span>
+				</div>
+				<div class="product-title">
+					成对使用 秒分新旧
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥12
+					</span>
+					<span class="price-pass"><s>￥46</s></span>
+					<span class="price-now">2.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>机乐堂|苹果数据线 充电器快充不伤机6/7/X/XR苹果充电线</span>
+				</div>
+				<div class="product-title">
+					苹果数据线快充不弹窗
+				</div>
+				<div class="product-prgress">
+					累计热卖2.2万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥11
+					</span>
+					<span class="price-pass"><s>￥39</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>金士顿|迷你风扇 U盘32G高速优盘USB3.1办公64G128GU盘</span>
+				</div>
+				<div class="product-title">
+					金士顿高速U盘
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥27
+					</span>
+					<span class="price-pass"><s>￥107</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>品胜|充电宝30000毫安大容量超薄小巧便携迷你原装正品移动电源</span>
+				</div>
+				<div class="product-title">
+					充一次用一周
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥98
+					</span>
+					<span class="price-pass"><s>￥358</s></span>
+					<span class="price-now">2.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>小熊|绞肉机家用电动饺馅碎菜全自动小型搅拌打肉蒜泥料理机</span>
+				</div>
+				<div class="product-title">
+					颜值升级 高速绞肉机
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥85
+					</span>
+					<span class="price-pass"><s>￥599</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/electrica7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>利仁|家用加深烤盘电饼铛档双面烤肉机烙饼锅电烤盘煎烤机煎饼锅X2901A</span>
+				</div>
+				<div class="product-title">
+					旋钮调温 加深烤盘
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥103
+					</span>
+					<span class="price-pass"><s>￥529</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 个人护理 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="h"></a>
+				个人护理
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/去黑头hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>番茄派|TOMATO PAI 三部去黑头收缩毛孔鼻贴膜套装10片</span>
+				</div>
+				<div class="product-title">
+					去黑头，收缩毛孔
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥44
+					</span>
+					<span class="price-pass"><s>￥196</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/小奥汀hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>小奥汀|【薇娅推荐】绚彩纤长睫毛膏 浓密防水卷翘持久加长自然不晕染</span>
+				</div>
+				<div class="product-title">
+					浓密卷翘防水不晕染
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥79</s></span>
+					<span class="price-now">7.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/李医生hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>李医生|【口碑推荐 大容量】嫩肤去角质凝露 250g 去死皮深层清洁</span>
+				</div>
+				<div class="product-title">
+					品牌推荐 温和去角质
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥34
+					</span>
+					<span class="price-pass"><s>￥169</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/火烈鸟hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>火烈鸟|【眼妆两件套】彩妆套组睫毛膏眼线液笔防水速干可选眉笔</span>
+				</div>
+				<div class="product-title">
+					眼部套装 魅惑大眼
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥27
+					</span>
+					<span class="price-pass"><s>￥94</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/美丽工匠hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>美丽工匠|80抽加厚卷筒洗脸巾不掉絮棉柔抽取一次性洗脸巾洁面巾美容巾</span>
+				</div>
+				<div class="product-title">
+					爆款80段加厚洗脸巾
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥69</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/美甲hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>稚优泉|【夏日美甲 持色显白】印章指甲油 持久显色不可撕拉ins超火</span>
+				</div>
+				<div class="product-title">
+					绝色美甲 持久显白
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥9
+					</span>
+					<span class="price-pass"><s>￥39</s></span>
+					<span class="price-now">2.3</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/自然旋律hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>自然旋律|【口碑爆款颈纹小熨斗】六胜肽淡化颈纹提拉紧致颈霜颈膜120g</span>
+				</div>
+				<div class="product-title">
+					颈纹小熨斗按摩美颈霜
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥58
+					</span>
+					<span class="price-pass"><s>￥218</s></span>
+					<span class="price-now">2.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/谜尚hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>谜尚|【断货王眉笔】自动美眉笔 双头双效防水防汗持久不晕染 颜色任选</span>
+				</div>
+				<div class="product-title">
+					双头双效 勾勒型眉
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 时尚女装 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="i"></a>
+				时尚女装
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>麦子熟了|【镇店爆款】秋季妈妈装长裤直筒裤中老年裤子松紧腰小脚休闲裤 </span>
+				</div>
+				<div class="product-title">
+					热销爆款松紧腰长裤
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥44
+					</span>
+					<span class="price-pass"><s>￥196</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>索菲丝尔|【反季】【羽绒小脚裤】冬加厚保暖羽绒裤修身显瘦打底裤弹力女裤</span>
+				</div>
+				<div class="product-title">
+					加厚保暖羽绒裤
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥79</s></span>
+					<span class="price-now">7.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>缤慕|2020夏季新款简约小雏菊印花休闲宽松女式t恤舒适纯棉圆领短袖t恤</span>
+				</div>
+				<div class="product-title">
+					简约小雏菊短袖T恤
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥34
+					</span>
+					<span class="price-pass"><s>￥169</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>德玛纳|【2020夏新款】宽松显瘦性感无袖上衣吊带打底背心女</span>
+				</div>
+				<div class="product-title">
+					显瘦吊带打底背心
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥27
+					</span>
+					<span class="price-pass"><s>￥94</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>台格|【减龄印花】春夏秋季妈妈装中年女装立领七分袖中长款休闲衬衫女</span>
+				</div>
+				<div class="product-title">
+					妈妈装衬衫清凉上衣
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥75
+					</span>
+					<span class="price-pass"><s>￥398</s></span>
+					<span class="price-now">1.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>对白|【乘风破浪的姐姐推荐】新款女士纯色高腰显瘦a字短款半身皮裙</span>
+				</div>
+				<div class="product-title">
+					高腰显瘦A字半身皮裙
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥49
+					</span>
+					<span class="price-pass"><s>￥259</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/phone7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>摩索依|新款单排扣秋冬插袋个性时尚羊剪绒女装皮草外套</span>
+				</div>
+				<div class="product-title">
+					插袋羊剪绒外套
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥139
+					</span>
+					<span class="price-pass"><s>￥3390</s></span>
+					<span class="price-now">0.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/woman8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>千百·怡恋|妈妈装套装女夏中老年女装阔腿裤老年人女式休闲大码两件套</span>
+				</div>
+				<div class="product-title">
+					妈妈装 中老年套装
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥68
+					</span>
+					<span class="price-pass"><s>￥488</s></span>
+					<span class="price-now">1.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 品质男装 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="j"></a>
+				品质男装
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>FAIRY-FOX|秋季新款工装裤男潮牌修身哈伦裤束脚休闲裤男学生校园</span>
+				</div>
+				<div class="product-title">
+					潮爆单品舒适达人
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥69
+					</span>
+					<span class="price-pass"><s>￥458</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>堡狮龙|20夏新款男装刺绣翻领短袖polo衫男士</span>
+				</div>
+				<div class="product-title">
+					刺绣翻领短袖polo
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥39
+					</span>
+					<span class="price-pass"><s>￥199</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>凯撒大帝|2020春秋新款经典男士衬衫商务休闲简约修身百搭男士长袖衬衫</span>
+				</div>
+				<div class="product-title">
+					纯色经典长袖衬衫男
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥56
+					</span>
+					<span class="price-pass"><s>￥588</s></span>
+					<span class="price-now">1折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>高梵|夏季纯棉半袖男t恤大码圆领青少年体恤情侣装男士短袖男式t恤</span>
+				</div>
+				<div class="product-title">
+					纯棉舒适 吸睛印花
+				</div>
+				<div class="product-prgress">
+					累计热卖9.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥32
+					</span>
+					<span class="price-pass"><s>￥156</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>皓顿|【爆款】2020秋季百搭时尚休闲修身弹性直筒裤子男士牛仔裤男</span>
+				</div>
+				<div class="product-title">
+					修身弹性直筒牛仔裤
+				</div>
+				<div class="product-prgress">
+					累计热卖1.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥88
+					</span>
+					<span class="price-pass"><s>￥499</s></span>
+					<span class="price-now">1.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>SARTORE|2020春秋季新款简约时尚百搭连帽休闲男外套潮流宽松男士夹克</span>
+				</div>
+				<div class="product-title">
+					简约时尚连帽休闲夹克
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥107
+					</span>
+					<span class="price-pass"><s>￥599</s></span>
+					<span class="price-now">1.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>相思鸟|国民男装压胶直充工艺爸爸中老年男装外套秋冬加厚羽绒服</span>
+				</div>
+				<div class="product-title">
+					优质鸭绒加厚羽绒服
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥83
+					</span>
+					<span class="price-pass"><s>￥1399</s></span>
+					<span class="price-now">0.6折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/man8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>KOJO|【两件】运动套装男式t恤夏季潮牌休闲男装短袖短裤一套搭配衣服</span>
+				</div>
+				<div class="product-title">
+					运动休闲帅气一套搭配
+				</div>
+				<div class="product-prgress">
+					累计热卖4.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥259</s></span>
+					<span class="price-now">1.3折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 母婴童装 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="k"></a>
+				母婴童装
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>爽然|屁屁好朋友成长裤（训练裤） L/XL/XXL 超薄透气宝宝拉拉裤</span>
+				</div>
+				<div class="product-title">
+					更多妈妈推荐的拉拉裤
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥82
+					</span>
+					<span class="price-pass"><s>￥315</s></span>
+					<span class="price-now">2.6折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>babycare【加厚不脏手】婴儿手口专用宝宝新生儿屁屁湿纸巾80抽带盖6包</span>
+				</div>
+				<div class="product-title">
+					婴儿手口可用加厚湿巾
+				</div>
+				<div class="product-prgress">
+					累计热卖4.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥52
+					</span>
+					<span class="price-pass"><s>￥400</s></span>
+					<span class="price-now">1.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>棒棒猪|婴儿床围栏宝宝防摔防护栏儿童床边挡板婴儿床围栏床护栏</span>
+				</div>
+				<div class="product-title">
+					不会夹手的床围
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥110
+					</span>
+					<span class="price-pass"><s>￥698</s></span>
+					<span class="price-now">1.6折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>嘉宝|海外嘉宝 枫糖香草泡芙条 3段 42g 罐装</span>
+				</div>
+				<div class="product-title">
+					入口即化练抓握
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥11
+					</span>
+					<span class="price-pass"><s>￥80</s></span>
+					<span class="price-now">1.4折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/美丽工匠hfcz.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>美丽工匠|80抽加厚卷筒洗脸巾不掉絮棉柔抽取一次性洗脸巾洁面巾美容巾</span>
+				</div>
+				<div class="product-title">
+					爆款80段加厚洗脸巾
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥69</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>好孩子|婴儿橄榄洗发沐浴露500ml 洗发沐浴二合一植物精华自然滋养</span>
+				</div>
+				<div class="product-title">
+					植物精粹 洁净滋养
+				</div>
+				<div class="product-prgress">
+					累计热卖4.5万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥25
+					</span>
+					<span class="price-pass"><s>￥49</s></span>
+					<span class="price-now">5.1折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>菲比|绵柔干爽乐玩裤拉拉裤L114片/XL96片/XXL75片/XXXL56片</span>
+				</div>
+				<div class="product-title">
+					乐动自如 全方位防漏
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥84
+					</span>
+					<span class="price-pass"><s>￥330</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/child8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>Caramella|10双装中大童超薄网眼镂空儿童袜防蚊袜短筒袜男童袜子女童袜子</span>
+				</div>
+				<div class="product-title">
+					网眼透气超值享受
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥29
+					</span>
+					<span class="price-pass"><s>￥119</s></span>
+					<span class="price-now">2.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 鞋靴箱包 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="l"></a>
+				鞋靴箱包
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>estelle&thild|【尾货清仓】小巧精致高档女士钱包大容量多卡位驾驶证卡包女</span>
+				</div>
+				<div class="product-title">
+					小巧大容量多卡位卡包
+				</div>
+				<div class="product-prgress">
+					累计热卖9万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥198</s></span>
+					<span class="price-now">3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>足力健|【牛皮革鞋面】爸爸鞋皮鞋男中老年鞋男士皮鞋老人鞋休闲鞋男鞋</span>
+				</div>
+				<div class="product-title">
+					轻便宽松不挤脚
+				</div>
+				<div class="product-prgress">
+					累计热卖2.2万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥89
+					</span>
+					<span class="price-pass"><s>￥169</s></span>
+					<span class="price-now">5.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>SEALION|防撞时尚万向轮旅行包密码箱拉链拉杆箱旅行箱女学生20行李箱包</span>
+				</div>
+				<div class="product-title">
+					潮流多色 出行必备
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥119
+					</span>
+					<span class="price-pass"><s>￥927</s></span>
+					<span class="price-now">2.3折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>足力健|【健康鞋】爸爸鞋轻便中老年鞋软弹健步鞋妈妈鞋老人鞋运动鞋女鞋</span>
+				</div>
+				<div class="product-title">
+					七夕敬孝心好鞋送爸妈
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥69
+					</span>
+					<span class="price-pass"><s>￥249</s></span>
+					<span class="price-now">2.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>高尔夫|时尚简约笔记本保护套商务手提包男女14寸电脑包</span>
+				</div>
+				<div class="product-title">
+					爆款80段加厚洗脸巾
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥44
+					</span>
+					<span class="price-pass"><s>￥449</s></span>
+					<span class="price-now">1.2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>卡帝乐鳄鱼|【三十而已同款】旅行包女大容量多功能手提包出差行李包运动包</span>
+				</div>
+				<div class="product-title">
+					女士多功能健身旅行包
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥159
+					</span>
+					<span class="price-pass"><s>￥659</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>哈林特区|【七夕情人节礼物】进口面料大容量托特包手提包包女式斜挎包女包</span>
+				</div>
+				<div class="product-title">
+					欧美范 大容量托特包
+				</div>
+				<div class="product-prgress">
+					累计热卖2.2万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥158
+					</span>
+					<span class="price-pass"><s>￥599</s></span>
+					<span class="price-now">2.6折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/bag8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>公牛世家|真皮凉鞋夏季新款沙滩鞋爸爸外穿两用拖鞋男士真皮凉鞋男士凉鞋</span>
+				</div>
+				<div class="product-title">
+					双头双效 勾勒型眉
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 男女内衣 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="m"></a>
+				男女内衣
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>爱黛|魔力体雕系列美体薄款提臀束腰收腹透气一体式燃脂**连体塑身衣</span>
+				</div>
+				<div class="product-title">
+					提臀束腰连体塑身衣
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥89
+					</span>
+					<span class="price-pass"><s>￥1186</s></span>
+					<span class="price-now">0.8折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>袋鼠|4条莫代尔运动透气超薄抗菌底裤头短裤四角无痕男士内裤平角</span>
+				</div>
+				<div class="product-title">
+					莫代尔冰丝抑菌无痕
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥79</s></span>
+					<span class="price-now">7.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>彪马|【3双装】舒适弹力袜子男士中筒休闲运动棉袜</span>
+				</div>
+				<div class="product-title">
+					中厚四季 运动透气
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥34
+					</span>
+					<span class="price-pass"><s>￥169</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>恒源祥|【100%棉】1条装纯色中腰薄款保暖裤男纯棉秋裤男</span>
+				</div>
+				<div class="product-title">
+					中腰纯棉 舒适透气
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥27
+					</span>
+					<span class="price-pass"><s>￥94</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>南极人|【双层防透丝滑绸面】2020新款宽松显瘦女式吊带打底背心女 吊带</span>
+				</div>
+				<div class="product-title">
+					宽松显瘦 丝滑打底
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥69</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>芬腾可安|4条装舒适透气时尚撞色弹力休闲纯棉裆内衣女士内裤女</span>
+				</div>
+				<div class="product-title">
+					经典条纹 舒适透气
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥49
+					</span>
+					<span class="price-pass"><s>￥299</s></span>
+					<span class="price-now">1.7折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>南极人|【镂空花纹】女士袜子女舒适透气隐形袜女纯色棉质不掉跟女船袜</span>
+				</div>
+				<div class="product-title">
+					镂空网眼 超值十双装
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥29
+					</span>
+					<span class="price-pass"><s>￥119</s></span>
+					<span class="price-now">2.4折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/clothes8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>恒源祥|【100%纯棉】2件装贴身透气舒适男士背心纯棉背心男</span>
+				</div>
+				<div class="product-title">
+					2件装背心 纯棉透气
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 运动户外 -->
+	<div class="hfcz">
+		<div class="hfcz-top">
+			<span></span>
+			<div class="hfcz-name">
+				<a name="n"></a>
+				运动户外
+			</div>
+			<span></span>
+		</div>
+		<div class="hfcz-show">
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport1.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>奥义|瑜伽弹力带拉力带伸展拉伸开肩练肩膀圈男女健身瘦身减肥用品</span>
+				</div>
+				<div class="product-title">
+					天然乳胶 轻巧便携
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥9
+					</span>
+					<span class="price-pass"><s>￥59</s></span>
+					<span class="price-now">1.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport2.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>WITESS|正品室外耐磨牛皮真皮手感中小学生7号成人比赛篮球5号儿童</span>
+				</div>
+				<div class="product-title">
+					吸湿颗粒耐磨软皮
+				</div>
+				<div class="product-prgress">
+					累计热卖2.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥59
+					</span>
+					<span class="price-pass"><s>￥79</s></span>
+					<span class="price-now">7.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport3.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>多德士|仰卧起坐辅助器吸盘式卷腹健身器材锻炼减肥瘦肚子减腹收腹机</span>
+				</div>
+				<div class="product-title">
+					仰卧起坐不求人
+				</div>
+				<div class="product-prgress">
+					累计热卖3.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥34
+					</span>
+					<span class="price-pass"><s>￥169</s></span>
+					<span class="price-now">2折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport4.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>红双喜|【改善视眼】乒乓球训练器弹力软轴儿童玩具对打防近视家用训练</span>
+				</div>
+				<div class="product-title">
+					眼部套装 魅惑大眼
+				</div>
+				<div class="product-prgress">
+					累计热卖3.6万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥27
+					</span>
+					<span class="price-pass"><s>￥94</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport5.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>川崎|kawasaki 12支装耐打稳定俱乐部羽毛球训练球B1</span>
+				</div>
+				<div class="product-title">
+					12支装耐打训练羽毛
+				</div>
+				<div class="product-prgress">
+					累计热卖3.0万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥17
+					</span>
+					<span class="price-pass"><s>￥69</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport6.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>李宁|8字拉力器瑜伽健身家用开肩颈美背训练器材拉伸带八字弹力绳</span>
+				</div>
+				<div class="product-title">
+					三年内拉断免费换新
+				</div>
+				<div class="product-prgress">
+					累计热卖2.3万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥29
+					</span>
+					<span class="price-pass"><s>￥99</s></span>
+					<span class="price-now">2.5折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport7.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>FORIDER|头盔电动车男女夏季防晒双镜片半盔电瓶车自行车安全帽骑行装备</span>
+				</div>
+				<div class="product-title">
+					防晒挡雨 电动车头盔
+				</div>
+				<div class="product-prgress">
+					累计热卖2.8万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥65
+					</span>
+					<span class="price-pass"><s>￥229</s></span>
+					<span class="price-now">2.9折</span>
+				</div>
+			</div>
+			<div class="hfcz-product">
+				<div class="mti_into">点击进入</div>
+				<div class="product-img">
+					<img src="img/sport8.jpg" alt="">
+				</div>
+				<div class="product-tip">
+					<span>火车|头足球5号成人4号四号小学生3号儿童幼儿园训练比赛耐磨软皮</span>
+				</div>
+				<div class="product-title">
+					耐磨软皮
+				</div>
+				<div class="product-prgress">
+					累计热卖8.1万件
+				</div>
+				<div class="product-price">
+					<span class="discount"> 折后价
+					</span>
+					<span class="price">
+						¥10
+					</span>
+					<span class="price-pass"><s>￥29</s></span>
+					<span class="price-now">3.4折</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 锚点链接 -->
+	<div class="nav-info" id="nav_info">
+		<ul>
+			<li class="mdcolor">
+				<a href="#a" title="">
+					<i class="fa fa-yelp"></i>
+					今日必抢</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#b" title="">
+					<i class="fa fa-yelp"></i>
+					海外尖货</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#c" title="">
+					<i class="fa fa-yelp"></i>
+					护肤彩妆</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#d" title="">
+					<i class="fa fa-yelp"></i>
+					生活超市</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#e" title="">
+					<i class="fa fa-yelp"></i>
+					家居家纺</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#f" title="">
+					<i class="fa fa-yelp"></i>
+					大小家电</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#g" title="">
+					<i class="fa fa-yelp"></i>
+					手机数码</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#h" title="">
+					<i class="fa fa-yelp"></i>
+					个人护理</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#i" title="">
+					<i class="fa fa-yelp"></i>
+					时尚女装</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#j" title="">
+					<i class="fa fa-yelp"></i>
+					品质男装</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#k" title="">
+					<i class="fa fa-yelp"></i>
+					母婴童装</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#l" title="">
+					<i class="fa fa-yelp"></i>
+					鞋靴箱包</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#m" title="">
+					<i class="fa fa-yelp"></i>
+					男女内衣</a>
+			</li>
+			<li class="mdcolor">
+				<a href="#n" title="">
+					<i class="fa fa-yelp"></i>
+					运动户外</a>
+			</li>
+		</ul>
+		<!-- 导航隐藏显示箭头 -->
+		<div id="anhour_hidden_box">
+			<p><i class="fa fa-arrow-circle-o-right"></i></p>
+			<p>导</p>
+			<p>航</p>
+		</div>
+	</div>
+
+<!-- 页脚 -->
+<div class="foot-inner">
+	<div class="foot-vip">
+		<ul class="foot-vip-text">
+			<li>
+				<i class="fa fa-trophy"></i>
+				<br>
+				全球领先
+			</li>
+			<li>
+				<i class="fa fa-thumbs-o-up"></i>
+				<br>正品货源
+			</li>
+			<li>
+				<i class="fa fa-plane"></i>
+				<br>全球直采
+			</li>
+			<li>
+				<i class="fa fa-institution"></i>
+				<br>自营仓储
+			</li>
+			<li>
+				<i class="fa fa-truck"></i>
+				<br>入仓检验
+			</li>
+			<li>
+				<i class="fa fa-smile-o"></i>
+				<br>正品保险
+			</li>
+			<li>
+				<i class="fa fa-handshake-o"></i>
+				<br>无忧退换
+			</li>
+			<li>
+				<i class="fa fa-heart-o"></i>
+				<br>万千信赖
+			</li>
+		</ul>
+	</div>
+	<div class="foot-list">
+		<dl class="foot-list-text">
+			<dt>服务保障</dt>
+			<dd>
+				<a href="">正品保证</a>
+			</dd>
+			<dd>
+				<a href="">7天无理由放心退</a>
+			</dd>
+			<dd>
+				<a href="">7×15小时客户服务</a>
+			</dd>
+			<dd>
+				<a href="">7天无理由随心换</a>
+			</dd>
+		</dl>
+		<dl class="foot-list-text">
+			<dt>购物指南</dt>
+			<dd>
+				<a href="">导购演示</a>
+			</dd>
+			<dd>
+				<a href="">订单操作</a>
+			</dd>
+			<dd>
+				<a href="">会员注册</a>
+			</dd>
+			<dd>
+				<a href="">账户管理</a>
+			</dd>
+			<dd>
+				<a href="">收获样品</a>
+			</dd>
+			<dd>
+				<a href="">会员等级</a>
+			</dd>
+		</dl>
+		<dl class="foot-list-text">
+			<dt>支付方式</dt>
+			<dd>
+				<a href="">23家主流网银支付</a>
+			</dd>
+			<dd>
+				<a href="">支付宝、银联等支付</a>
+			</dd>
+			<dd>
+				<a href="">信用卡支付</a>
+			</dd>
+			<dd>
+				<a href="">零钱支付</a>
+			</dd>
+		</dl>
+		<dl class="foot-list-text">
+			<dt>配送方式</dt>
+			<dd>
+				<a href="">配送范围及运费</a>
+			</dd>
+			<dd>
+				<a href="">验货与签收</a>
+			</dd>
+		</dl>
+		<dl class="foot-list-text">
+			<dt>
+				售后服务
+			</dt>
+			<dd>
+				<a href="">退货政策</a>
+			</dd>
+			<dd>
+				<a href="">退货流程</a>
+			</dd>
+			<dd>
+				<a href="">退款方式与时效</a>
+			</dd>
+			<dd>
+				<a href="">换货服务</a>
+			</dd>
+		</dl>
+		<dl class="foot-list-last">
+			<dt>淘品会app二维码</dt>
+			<dd>
+				<img src="../footer/img/app.jpg" alt="">
+			</dd>
+			<dd>下载淘品会移动APP</dd>
+		</dl>
+	</div>
+	<div class="foot-infor">
+		<p class="foot-infor-link">
+			<a href="">关于我们</a>|
+			<a href="">About us</a>|
+			<a href="">Investor Relations</a>|
+			<a href="">媒体报道</a>|
+			<a href="">品牌招商</a>|
+			<a href="">隐私条款</a>|
+			<a href="">唯品诚聘</a>|
+			<a href="">唯品卡</a>|
+			<a href="">联系我们</a>|
+		</p>
+		<p class="foot-infor-txt">
+			Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受
+			<a href="">唯品会用户协议</a>。版权所有
+			<a href="" rel="nofollow">广州唯品会电子商务有限公司</a>
+			<br>
+			<a href="" rel="nofollow"><img src="../footer/img/police_icon.png" alt="">粤公网安备44010302111111号</a>&nbsp;&nbsp;
+			<a href="" rel="nofollow">粤ICP备08114786号</a>
+			<a href="" rel="nofollow">增值业务经营许可证：粤B2-20170777 </a>
+			<a href="" rel="nofollow">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+			<br>
+			<a href="" rel="nofollow">经营主体证照</a>
+			<a href="" rel="nofollow">风险监测信息</a>&nbsp;&nbsp;
+			<a href="" rel="nofollow">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+			<a href="" rel="nofollow"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+			<a href="" rel="nofollow">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+		</p>
+	</div>
+
+</div>
+<script src="../nav/home.js"></script>
+<script src="wpkq.js"></script>
+</body>
+</html>

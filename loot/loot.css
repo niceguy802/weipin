@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a, body{
+    color: #333;
+}
+a{
+	text-decoration: none;
+}
+
+.center{
+	width: 100%;
+	height: 400px;
+	background: url('img/bg.jpg') no-repeat center;
+	/*background-size: 100%;*/
+}
+
+/*内容*/
+.content{
+	width: 100%;
+	background-color: #ff789d;
+}
+
+/*锚点导航栏*/
+.anhour{
+	width: 90px;
+	height: 200px;
+	/* position: relative; */
+	background-color: #ffffff;
+	/*text-align: center;*/
+	position: fixed;
+	top: 50px;
+	/* left: 20px; */
+	left: -85px;
+	border-radius: 10px;
+	border: 1px solid #d6d6d6;
+	display: none;
+	transition: left .5s linear;
+}
+/* 锚点显示 */
+#anhour_hidden_box{
+	width: 30px;
+	height: 67px;
+	position: absolute;
+	left: 90px;
+	top: 75px;
+	font-size: 16px;
+	text-align: center;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border:1px solid #ccc;
+	background-color: #fff;
+	display: block;
+}
+  i.fa.fa-arrow-circle-o-right{
+    font-size: 25px;
+  }
+
+.mdcolor{
+	width: 75px;
+	height: 31px;
+	margin: 7px 2px 4px 2px;
+	border-radius: 5px;
+	
+}
+#anhour_logo{
+	width: 100px;
+}
+.anhour_typeName{
+	width: 80px;
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+	border-radius: 3px;
+	border-bottom: 1px solid #ccc;
+}
+.anhour_typeName span{
+	font-size: 20px;
+}
+
+.anhour_returnTop{
+	color: #fff;
+	font-size: 14px;
+	margin-top: 4px;
+	text-align: center;
+}
+.dir_title{
+	width: 100%;
+	height: 132px;
+	background: url('img/dir_title.png') no-repeat center;
+}
+.dir_type{
+	width: 1000px;
+	height: 426px;
+	margin: 0 auto;
+	/*border:1px solid yellow;*/
+}
+
+.dir_box{
+	width: 158px;
+	height: 203px;
+	float: left;
+	margin: 4px;
+	background-color: #fff;
+}
+
+.dir_box{
+	width: 158px;
+	height: 203px;
+	float: left;
+	margin: 4px;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+/* 鼠标移入图片放大、透明度改变 */
+.dir_box:hover img{
+	opacity: 0.85;
+    transform: scale(1.1);
+    transition: all .6s;
+}
+/* 点击进入样式 */
+.mti_into{
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
+      position: absolute;
+      /* top: 30px; */
+      top: -75px;
+      left: 45px;
+      /* left: -70px; */
+      /* color: #333333; */
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background-color: #ffffff6e;
+      /* display: none; */
+}
+.dir_box:hover .mti_into{
+	top:30px;
+    transition: all .6s;
+}
+
+/*各分类标题样式*/
+.wom_title, .shoe_title, .man_title, .sport_title, .cosmet_title{
+	width: 100%;
+	height: 114px;
+}
+
+/*各分类内容样式*/
+.wom_content, .shoe_content, .man_content, .sport_content, .cosmet_content{
+	width: 1032px;
+	height: 832px;
+	margin: 0 auto;
+	/*border:1px solid yellow;*/
+}
+
+/*各分类小box样式*/
+.wom_box, .shoe_box, .man_box, .sport_box, .cosmet_box{
+	width: 238px;
+	height: 397px;
+	float: left;
+	margin: 9px;
+	background-color: #fff;
+	border:1px solid #ccc;
+	overflow: hidden;
+}
+
+/*加载更多按钮样式*/
+.loadBtn{
+	width: 320px;
+	height: 40px;
+	text-align: center;
+	color: #fff;
+	line-height: 40px;
+	margin: 30px auto;
+	cursor: pointer;
+	background-color: #f10180;
+}
+
+.hide{
+	display: none;
+}
+
+/*猜你喜欢 分类图片样式*/
+.dir_box img{
+	width: 158px;
+	height: 158px;
+}
+.itemName{
+	font-size: 22px;
+	text-align: center;
+}
+/*品牌名*/
+.brand_name{
+	width: 194px;
+	height: 24px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+/*打折*/
+.benefit{
+	width: 190px;
+	height: 33px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 3px 25px 0 23px;
+	line-height: 33px;
+	font-size: 18px;
+	color: #f10180;
+}
+/*打折数字体*/
+.benefit_salebg{
+	font-size: 30px;
+}
+
+/*抢购按钮*/
+.purchBtn{
+	width: 190px;
+	height: 28px;
+	color: #f10180;
+	text-align: center;
+	line-height: 28px;
+	border: 1px solid #f10180;
+	border-radius: 2px;
+	margin: 16px 24px 0;
+	
+}
+
+/*小box伪类*/
+.wom_box:hover, .shoe_box:hover, .man_box:hover, .sport_box:hover, .cosmet_box:hover{
+	border: 1px solid #f10180;
+}
+
+/* 鼠标移入图片放大、透明度改变 */
+.wom_box:hover img, .shoe_box:hover img, .man_box:hover img, .sport_box:hover img, .cosmet_box:hover img{
+	opacity: 0.75;
+    transform: scale(1.06);
+    transition: all .6s;
+}
+/*抢购按钮伪类*/
+.wom_box:hover > .purchBtn, .shoe_box:hover > .purchBtn, .man_box:hover > .purchBtn, .sport_box:hover > .purchBtn, .cosmet_box:hover > .purchBtn{
+	background-color: #f10180;
+	color: #fff;
+}
+
+/*时尚女装*/
+.wom_title{
+	background: url('img/wom_title.png') no-repeat center;
+}
+
+/*潮流鞋包*/
+.shoe_title{
+	background: url('img/shoe_title.png') no-repeat center;
+}
+
+/*品质男装*/
+.man_title{
+	background: url('img/man_title.png') no-repeat center;
+}
+
+/*运动户外*/
+.sport_title{
+	background: url('img/sport_title.png') no-repeat center;
+}
+
+/*美妆精品*/
+.cosmet_title{
+	background: url('img/cosmet_title.png') no-repeat center;
+}
+
+.activitRule{
+	width: 960px;
+	height: 450px;
+	margin: 60px auto;
+}
+.activitRule h2{
+	text-align: center;
+	font-size: 38px;
+}
+.ruleExplain{
+	font-size: 16px;
+}
+
+.activitRule p{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 16px;
+}
